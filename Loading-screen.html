@@ -1,29 +1,26 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Jenny Hubot | Loading</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    
-    <div class="login-box">
-        <h2>Loading. . .</h2>
-        <form>
-          <h6> Jenny is private property of William Graves </h6>
-          <p> we politely request to respect any resources put in place. It is not your right to access and we will remove anyone who we feel is miss using the software.</p>
-          <a href="main.html">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            i agree
-          </a>
-        </form>
-      </div>
 
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" media="screen" href="loading.css">
+</head>
+
+<body class="bg">
+    <div class="container">
+        <img src="jenny.jpeg">
+
+    </div>
+    <div id="audio">
+        <audio controls loop autoplay hidden>
+        <!-- Audio is looped, plays automatically and is hidden -->
+            <source src="voiceloading.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="loadbar">
+
+        <div class="progressBar"></div>
+    </div>
+    <script src="loading.js"></script>
 </body>
+
 </html>
