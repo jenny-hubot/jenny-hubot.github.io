@@ -100,23 +100,25 @@
       const chatbot = () => {
         let name = prompt("Hello! What's your name?");
         let message = `Nice to meet you, ${name}! How can I help you today?`;
-        
-        while (true) {
-          let userInput = prompt(message);
+        let conversation = document.querySelector('.conversation');
+
+        const addBubble = (text, sender) => {
+          let bubble = document.createElement('div');
+          bubble.classList.add('bubble');
+          bubble.classList.add(sender);
+          bubble.innerHTML = `<p>${text}</p>`;
+          conversation.appendChild(bubble);
+        }
+
+        addBubble(message, 'bot');
+
+        document.querySelector('.btn').addEventListener('click', () => {
+          let userInput = document.querySelector('input').value;
+          addBubble(userInput, 'user');
           switch (userInput.toLowerCase()) {
             case "hi":
             case "hello":
               message = "Hi there! How can I assist you today?";
-              break;
-            case "bye":
-            case "goodbye":
-              message = "Goodbye! Have a great day.";
-              break;
-            case "what is your name?":
-              message = "My name is Chatbot. How can I help you?";
-              break;
-            default:
-              message = "I'm sorry, I didn't understand what you said. Can you please rephrase?";
               break;
 </script>
 </body>
