@@ -1,35 +1,90 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Server Admin | Login</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
-    <script src='../main.js'></script>
-</head>
-<body>
-    
-    <div class="login-box">
-        <h2>Admin</h2>
-        <form>
-          <div class="user-box">
-            <input type="text" name="" required="">
-            <label>Username</label>
-          </div>
-          <div class="user-box">
-            <input type="password" name="" required="">
-            <label>Password</label>
-          </div>
-          <a href="home.html">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Login
-          </a>
-        </form>
-      </div>
+<html lang="en"><head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="noindex, nofollow, noarchive">
+	<meta name="googlebot" content="nosnippet">
+	<link rel="icon" type="image/x-icon" href="templates/Froxlor/assets/img/icon.png">
+	
+	<!-- CSS -->
+			<link href="demo.froxlor.org/templates/Froxlor/assets/css/main.css?id=0ad16b01c266151898efe003cfc230b5" rel="stylesheet" type="text/css">
 
-</body>
-</html>
+		
+	<!-- Scripts -->
+			<script type="text/javascript" src="templates/Froxlor/assets/js/main.js?id=a8ec4d72dcd62cb85a58690a2b645dd6"></script>
+
+			<title>Sawi | system</title>
+</head>
+<body class="min-vh-100 d-flex flex-column">
+	
+			<div class="container-fluid">
+				<div class="container">
+		<div class="row justify-content-center">
+			<form class="col-12 max-w-420 d-flex flex-column" method="post" enctype="application/x-www-form-urlencoded">
+				<img class="align-self-center my-5" src="templates/Froxlor/assets/img/logo.png" alt="Froxlor Server Management Panel">
+
+				<div class="card shadow">
+					<div class="card-body">
+						<h5 class="card-title">Login</h5>
+						<p>Please log in to access your account.</p>
+
+						
+						<div class="mb-3">
+							<label for="loginname" class="col-form-label">Username</label>
+							<input class="form-control" type="text" name="loginname" id="loginname" value="" required="" autofocus="">
+						</div>
+
+						<div class="mb-3">
+							<label for="password" class="col-form-label">Password</label>
+							<input class="form-control" type="password" name="password" id="password" value="" required="">
+						</div>
+					</div>
+
+					<div class="card-body d-grid gap-2">
+						<input type="hidden" name="script" value="admin_index.php">
+						<input type="hidden" name="qrystr" value="page=change_theme">
+						<input type="hidden" name="send" value="send">
+						<button class="btn btn-primary rounded-top-0" type="submit" name="dologin">Login</button>
+					</div>
+
+						<div class="card-footer">
+						To login use one of the following credentials:<br>
+						<ul class="my-1">
+							<li><b id="setAdmin" role="button">admin:admin</b></li>
+                                                        <li><b id="setReseller" role="button">reseller1:reseller1</b></li>
+                                                        <li><b id="setCustomer" role="button">customer1:customer1</b></li>
+						</ul>
+						<small><b>Note:</b> This demo is being reset every hour</small>
+						</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script>
+	$(function () {
+		$('#setAdmin').on('click', function() {
+			$('#loginname').val('admin');
+			$('#password').val('admin');
+		});
+		$('#setReseller').on('click', function() {
+			$('#loginname').val('reseller1');
+			$('#password').val('reseller1'); 
+		});
+		$('#setCustomer').on('click', function() {
+			$('#loginname').val('customer1');
+			$('#password').val('customer1'); 
+		});
+	});
+	</script>
+			<footer class="text-center mb-3">
+	<span>
+		<img src="templates/Froxlor/assets/img/logo_grey.png" alt="Froxlor">
+									© 2023 by <a href="#sawi" rel="external" target="_blank">the sam and will programming Team</a><br>
+					<a href="/legal.php" target="_blank" class="footer-link">Legal notes</a>									</span>
+
+    </footer>
+
+		</div>
+	
+
+</body><div id="vimeo-record-extension"></div></html>
