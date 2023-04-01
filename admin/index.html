@@ -1,87 +1,65 @@
-<html lang="en"><head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="robots" content="noindex, nofollow, noarchive">
-	<meta name="googlebot" content="nosnippet">
-	<link rel="icon" type="image/x-icon" href="templates/Froxlor/assets/img/icon.png">
-	
-	<!-- CSS -->
-			<link href="https://demo.froxlor.org/templates/Froxlor/assets/css/main.css?id=0ad16b01c266151898efe003cfc230b5" rel="stylesheet" type="text/css">
-
-		
-	<!-- Scripts -->
-			<script type="text/javascript" src="templates/Froxlor/assets/js/main.js?id=a8ec4d72dcd62cb85a58690a2b645dd6"></script>
-
-			<title>Froxlor</title>
+<!doctype html>
+<html lang=”en”>
+<head>
+ <title>
+  JavaScript Validations
+ </title>
 </head>
-<body class="min-vh-100 d-flex flex-column">
-	
-			<div class="container-fluid">
-				<div class="container">
-		<div class="row justify-content-center">
-			<form class="col-12 max-w-420 d-flex flex-column" method="post" enctype="application/x-www-form-urlencoded">
-				<img class="align-self-center my-5" src="templates/Froxlor/assets/img/logo.png" alt="Froxlor Server Management Panel">
-
-				<div class="card shadow">
-					<div class="card-body">
-						<h5 class="card-title">Login</h5>
-						<p>Please log in to access your account.</p>
-
-						
-						<div class="mb-3">
-							<label for="loginname" class="col-form-label">Username</label>
-							<input class="form-control" type="text" name="loginname" id="loginname" value="" required="" autofocus="">
-						</div>
-
-						<div class="mb-3">
-							<label for="password" class="col-form-label">Password</label>
-							<input class="form-control" type="password" name="password" id="password" value="" required="">
-						</div>
-					</div>
-
-					<div class="card-body d-grid gap-2">
-						<button class="btn btn-primary rounded-top-0" type="submit" href="new.html">Login</button>
-					</div>
-
-						<div class="card-footer">
-						To login use one of the following credentials:<br>
-						<ul class="my-1">
-							<li><b id="setAdmin" role="button">admin:admin</b></li>
-                                                        <li><b id="setReseller" role="button">reseller1:reseller1</b></li>
-                                                        <li><b id="setCustomer" role="button">customer1:customer1</b></li>
-						</ul>
-						<small><b>Note:</b> This demo is being reset every hour</small>
-						</div>
-				</div>
-			</form>
-		</div>
-	</div>
-	<script>
-	$(function () {
-		$('#setAdmin').on('click', function() {
-			$('#loginname').val('admin');
-			$('#password').val('admin');
-		});
-		$('#setReseller').on('click', function() {
-			$('#loginname').val('reseller1');
-			$('#password').val('reseller1'); 
-		});
-		$('#setCustomer').on('click', function() {
-			$('#loginname').val('customer1');
-			$('#password').val('customer1'); 
-		});
-	});
-	</script>
-			<footer class="text-center mb-3">
-	<span>
-		<img src="templates/Froxlor/assets/img/logo_grey.png" alt="Froxlor">
-									© 2009-2023 by <a href="https://www.froxlor.org/" rel="external" target="_blank">the Froxlor Team</a><br>
-					<a href="https://froxlor.org/legal.php" target="_blank" class="footer-link">Legal notes</a>									</span>
-
-    </footer>
-
-		</div>
-	
-
-</body><div id="vimeo-record-extension"></div></html>
+<body>
+<h1>
+TalkersCode – JavaScript Validations
+</h1>
+<h2>
+JavaScript login page with database
+</h2>
+<form action="" method="post" name="Login_Form">
+  <table width="400" border="0" align="center" cellpadding="5" cellspacing="1" class="Table">
+    <?php if(isset($msg)){?>
+    <tr>
+      <td colspan="2" align="center" valign="top"><?php echo $msg;?></td>
+    </tr>
+    <?php } ?>
+    <tr>
+      <td colspan="2" align="left" valign="top"><h3>Login</h3></td>
+    </tr>
+    <tr>
+      <td align="right" valign="top">Username</td>
+      <td><input name="Username" type="text" class="Input"></td>
+    </tr>
+    <tr>
+      <td align="right">Password</td>
+      <td><input name="Password" type="password" class="Input"></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><input name="Submit" type="submit" value="Login" class="Button3"></td>
+    </tr>
+  </table>
+</form>
+<script>
+<?php session_start(); /* Starts the session */
+        
+        /* Check Login form submitted */        
+        if(isset($_POST['Submit'])){
+                /* Define username and associated password array */
+                $logins = array('WGadmin' => 'password1','SGadmin' => 'password1','JMadmin' => 'password1');
+                
+                /* Check and assign submitted Username and Password to new variable */
+                $Username = isset($_POST['Username']) ? $_POST['Username'] : '';
+                $Password = isset($_POST['Password']) ? $_POST['Password'] : '';
+                
+                /* Check Username and Password existence in defined array */            
+                if (isset($logins[$Username]) && $logins[$Username] == $Password){
+                        /* Success: Set session variables and redirect to Protected page  */
+                        $_SESSION['UserData']['Username']=$logins[$Username];
+                        header("location:index.php");
+                        exit;
+                } else {
+                        /*Unsuccessful attempt: Set error message */
+                        $msg="<span style='color:red'>Invalid Login Details</span>";
+                }
+        }
+?>
+</script>
+</body>
+</html>
