@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <style>
+      body {
+        background-color: #f7f7f7;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .chatbox {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        padding: 20px;
+        position: relative;
+      }
+
+      .chatbox input {
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 20px;
+      }
+
+      .chatbox input:focus {
+        outline: none;
+      }
+
+      .conversation {
+        height: 300px;
+        overflow-y: scroll;
+        margin-bottom: 20px;
+      }
+
+      .bubble {
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        max-width: 60%;
+      }
+
+      .bubble.bot {
+        margin-left: auto;
+        background-color: #d3f5f5;
+      }
+
+      .bubble.user {
+        background-color: #e1e1e1;
+      }
+
+      .bubble p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chatbot</h1>
+      <div class="chatbox">
+        <div class="conversation"></div>
+        <input type="text" placeholder="Type your message here...">
+      </div>
+    </div>
+    <script>
+      const chatbot = () => {
+        let name = prompt("Hello! What's your name?");
+        let message = `Nice to meet you, ${name}! How can I help you today?`;
+        
+        while (true) {
+          let userInput = prompt(message);
+          switch (userInput.toLowerCase()) {
+            case "hi":
+            case "hello":
+              message = "Hi there! How can I assist you today?";
+              break;
+            case "bye":
+            case "goodbye":
+              message = "Goodbye! Have a great day.";
+              break;
+            case "what is your name?":
+              message = "My name is Chatbot. How can I help you?";
+              break;
+            default:
+              message = "I'm sorry, I didn't understand what you said. Can you please rephrase?";
+              break;
+          }
+
+          let conversation = document.querySelector('.conversation');
+          let bubble = document.createElement('div');
+          bubble.classList.add('bubble');
+          bubble.classList.add('bot');
+          let bubbleText = document.createElement('p');
+          bubbleText.textContent = message;
+          bubble.appendChild(bubbleText);
+          conversation.appendChild(bubble);
+        }
+      };
+
+      let input = document.querySelector('.chatbox input');
+      input.addEventListener('keyup', (event) => {
+        if (event.keyCode
+</script>
+</body>
+</html>
