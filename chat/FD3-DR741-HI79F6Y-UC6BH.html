@@ -69,6 +69,22 @@
       .bubble p {
         margin: 0;
       }
+
+      .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      .btn:hover {
+        background-color: #3e8e41;
+      }
     </style>
   </head>
   <body>
@@ -77,6 +93,7 @@
       <div class="chatbox">
         <div class="conversation"></div>
         <input type="text" placeholder="Type your message here...">
+        <button class="btn">Send</button>
       </div>
     </div>
     <script>
@@ -101,22 +118,6 @@
             default:
               message = "I'm sorry, I didn't understand what you said. Can you please rephrase?";
               break;
-          }
-
-          let conversation = document.querySelector('.conversation');
-          let bubble = document.createElement('div');
-          bubble.classList.add('bubble');
-          bubble.classList.add('bot');
-          let bubbleText = document.createElement('p');
-          bubbleText.textContent = message;
-          bubble.appendChild(bubbleText);
-          conversation.appendChild(bubble);
-        }
-      };
-
-      let input = document.querySelector('.chatbox input');
-      input.addEventListener('keyup', (event) => {
-        if (event.keyCode
 </script>
 </body>
 </html>
