@@ -1,11 +1,15 @@
-var attempt = 3; // Variable to count number of attempts.
+var attempt = 5; // Variable to count number of attempts.
 // Below function Executes on click of login button.
 function validate(){
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
-if ( username == "Formget" && password == "formget#123"){
+if ( username == "WGsysadmin" && password == "SDGwieo47(91"){
 alert ("Login successfully");
-window.location = "success.html"; // Redirecting to other page.
+}
+window.location = "../user/WGsysadmin/index.html"; // Redirecting to other page.
+if ( username == "SGsyadmin" && password == "WDGwieo48(92"){
+    alert ("Login successfully");
+    window.location = "../user/WGsysadmin/index.html";
 return false;
 }
 else{
