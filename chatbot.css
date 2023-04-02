@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=poppins);
+@import url(https://fonts.googleapis.com/css?family=fira+sans);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+ .section1{
+    position: absolute;
+    margin-top: 50px;
+    width: 70%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar{
+    position: absolute;
+    top: 0;
+    width: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar h1{
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    font-family: "poppins";
+    color: #426691;
+    font-weight: 100;
+}
+
+.open-menu{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    opacity: 1;
+    transition: transform 0.3s ease;
+}
+
+.open-menu.active{
+    transform: rotate(180deg);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.discover-more{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px 20px;
+    transition: background 0.3s ease;
+}
+
+.discover-more span{
+    position: relative;
+    text-transform: capitalize;
+    color: #426691;
+}
+
+.discover-more .arrow-right{
+    position: relative;
+    fill: #426691;
+}
+
+.discover-more:hover::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0;
+    transition: 0.3s ease;
+}
+
+.discover-more:hover::before{
+    width: 100%;
+    background-color: #426691;
+}
+
+.discover-more:hover span{
+    color: white;
+}
+
+.discover-more:hover .arrow-right{
+    fill: white;
+}
+
+.img-container{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+}
