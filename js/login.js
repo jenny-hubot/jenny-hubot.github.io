@@ -13,7 +13,7 @@ if ( username == "SGsyadmin" && password == "WDGwieo48(92"){
 }
 if ( username == "MattGraves00" && password == "sakrod-rahvl0-vakniz"){
     alert ("Login successfully");
-    window.location = "../user/WGsysadmin/index.html";
+    window.location = "../user/MattGraves/index.html";
 return false;
 }
 else{
