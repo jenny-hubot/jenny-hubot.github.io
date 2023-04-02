@@ -10,12 +10,16 @@ window.location = "../user/WGsysadmin/index.html"; // Redirecting to other page.
 if ( username == "SGsyadmin" && password == "WDGwieo48(92"){
     alert ("Login successfully");
     window.location = "../user/WGsysadmin/index.html";
+}
+if ( username == "MattGraves00" && password == "sakrod-rahvl0-vakniz"){
+    alert ("Login successfully");
+    window.location = "../user/WGsysadmin/index.html";
 return false;
 }
 else{
 attempt --;// Decrementing by one.
 alert("You have left "+attempt+" attempt;");
-// Disabling fields after 3 attempts.
+// Disabling fields after 5 attempts.
 if( attempt == 0){
 document.getElementById("username").disabled = true;
 document.getElementById("password").disabled = true;
