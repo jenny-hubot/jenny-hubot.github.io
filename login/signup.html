@@ -6,13 +6,13 @@
     <title>Jenny Hubot | Login</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/login.css'>
-    <script src='#'></script>
+    <script src='../js/signup.js'></script>
 </head>
 <body>
     <div class="login-box">
         <h2>Jenny</h2>
         <p style="color:lightgoldenrodyellow">Note: all data is sent to and email address that is managed by Humans NO DATA is taken. and all passwords are securely encrypted.</p>
-        <form id="login-form" action="mailto:samandwillprogramming@gmail.com" method="post" enctype="text/plain">
+        <form id="signup-form">
           <div class="user-box">
             <input type="text" name="username" id="username" required="">
             <label>Username</label>
@@ -22,10 +22,10 @@
             <label>Password</label>
           </div>
           <div class="user-box">
-            <input type="email" name="email" id="email" required="">
+            <input type="text" name="email" id="email" required="">
             <label>email</label>
           </div>
-          <a href="../user/index.html">
+          <a href="../user/index.html" onclick="saveFile()">
             <span></span>
             <span></span>
             <span></span>
