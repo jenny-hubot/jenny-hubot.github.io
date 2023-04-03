@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Jenny Hubot | Login</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <style>
-        html {
+html {
     height: 100%;
   }
   body {
@@ -175,14 +167,3 @@
       bottom: 100%;
     }
   }
-    </style>
-</head>
-<body>
-    <div class="login-box">
-        <h2>Jenny</h2>
-        <p style="color:lightgoldenrodyellow">Note: there is a lot of users using this network. we can't prioitize you above others may take upto a week.</p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSex2nl1qczHtFEbbVSBstimZUssDxlmUyrBdGt8FuVW1TweAg/viewform?embedded=true" width="300" height="365" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-
-</body>
-</html>
