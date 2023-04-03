@@ -5,15 +5,15 @@ var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 if ( username == "WGsysadmin" && password == "SDGwieo47(91"){
 alert ("Login successfully");
-}
 window.location = "../user/WGsysadmin/index.html"; // Redirecting to other page.
+}
 if ( username == "SGsyadmin" && password == "WDGwieo48(92"){
     alert ("Login successfully");
     window.location = "../user/WGsysadmin/index.html";
 }
 if ( username == "MattGraves00" && password == "sakrod-rahvl0-vakniz"){
     alert ("Login successfully");
-    window.location = "../user/MattGraves/index.html";
+    window.location = "../user/MattGraves00/index.html";
 return false;
 }
 else{
