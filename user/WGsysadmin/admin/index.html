@@ -1,0 +1,625 @@
+<html lang="en"><head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="noindex, nofollow, noarchive">
+	<meta name="googlebot" content="nosnippet">
+	<link rel="icon" type="image/x-icon" href="https://demo.froxlor.org/templates/Froxlor/assets/img/icon.png">
+	<meta name="csrf-token" content="901dbdd2fc9cee58385ea41ac756b1b67bea4a80">
+	<!-- CSS -->
+			<link href="https://demo.froxlor.org/templates/Froxlor/assets/css/main.css?id=0ad16b01c266151898efe003cfc230b5" rel="stylesheet" type="text/css">
+
+			<title>Froxlor | Sawi</title>
+</head>
+<body class="min-vh-100 d-flex flex-column">
+		
+	<nav class="navbar navbar-expand-md navbar-light p-0 shadow-sm">
+		<div class="container-fluid gx-0">
+			<div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle sidebar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<a class="navbar-brand me-0 " href="index.php">
+				<img src="https://demo.froxlor.org/templates/Froxlor/assets/img/logo_white.png" alt="logo" class="header-logo d-inline-block align-text-top ms-md-3">
+			</a>
+			<div class="order-0 order-md-1 d-flex flex-grow-0 flex-md-grow-1" id="navbar">
+				<ul class="navbar-nav ms-md-auto me-3 me-lg-5">
+					<a class="nav-link d-md-none" data-bs-toggle="collapse" href="#collapseSearch" role="button" aria-expanded="false" aria-controls="collapseSearch">
+						<i class="fa-solid fa-search text-muted"></i>
+					</a>
+					<li class="nav-item" id="updatecheck">
+						<span id="ucheck" class="nav-link text-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus click" data-bs-html="true" data-bs-content="<p>You already have the latest testing-version of Froxlor installed.</p>
+		<div class='d-flex justify-content-between'>
+			<div class='fw-bold'>Version:</div>
+			<div>2.0.13</div>
+		</div>
+		<div class='d-flex justify-content-between'>
+			<div class='fw-bold'>Database version:</div>
+			<div>202303150</div>
+		</div>
+		<div class='d-flex justify-content-between'>
+			<div class='fw-bold'>Channel:</div>
+			<div>testing</div>
+		</div>
+		<div class='d-flex justify-content-between'>
+			<div class='fw-bold'>Last checked:</div>
+			<div>05.04.2023 14:10</div>
+		</div>
+	">
+			<i class="fa-solid fa-circle-check me-1"></i>
+		<span class="d-none d-xl-inline">2.0.13</span>
+</span>
+</li>
+										<li class="nav-item">
+						<a class="nav-link" href="admin_index.php">
+							<i class="fa-solid fa-house me-1"></i><span class="d-none d-xl-inline">Dashboard</span>
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarOpts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="fa-solid fa-user me-1"></i><span class="d-none d-xl-inline">admin</span>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarOpts">
+							<li>
+								<a class="dropdown-item" href="admin_index.php?page=change_password"><i class="fa-solid fa-lock"></i> Password</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="admin_index.php?page=change_language"><i class="fa-solid fa-flag"></i> Language</a>
+							</li>
+																						<li>
+									<a class="dropdown-item" href="admin_index.php?page=change_theme"><i class="fa-solid fa-image"></i> Theme</a>
+								</li>
+																						<li><hr class="dropdown-divider"></li>
+								<li>
+									<a class="dropdown-item" href="admin_index.php?page=apikeys"><i class="fa-solid fa-key"></i> API keys</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="https://docs.froxlor.org/latest/api-guide/" rel="external" target="_blank"><i class="fa-solid fa-circle-info"></i> API help</a>
+								</li>
+													</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-primary" title="Logout" href="admin_index.php?action=logout">
+							<i class="fas fa-power-off"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="order-1 order-md-0 collapse navbar-collapse" id="collapseSearch">
+				<form class="ms-3 mt-3 ms-lg-5 my-md-0" id="search" method="post">
+					<div class="d-flex align-items-center">
+						<i class="fa-solid fa-search text-muted"></i>
+						<input class="search-input" title="search" type="search" placeholder="Search...">
+					</div>
+					<div class="search-results-box p-2 shadow" style="display:none;">
+						<div class="search-results list-group-flush"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+		<div class="d-flex flex-grow-1">
+		<nav id="sidebar" class="sidebar collapse d-md-flex flex-shrink-0 flex-column bg-dark overflow-auto max-h-before-header">
+	<ul class="nav d-flex flex-fill flex-column py-3">
+									<li class="nav-item">
+					<a class="nav-link text-light collapsed" href="#sub0" data-bs-toggle="collapse" data-bs-target="#sub0">
+													<i class="fa-solid fa-box"></i>
+												Resources
+					</a>
+					<div class="collapse " id="sub0" aria-expanded="false">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_customers.php?page=customers">Customers</a>
+									</div>
+																			<a href="admin_customers.php?page=customers&amp;action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_admins.php?page=admins">Admins</a>
+									</div>
+																			<a href="admin_admins.php?page=admins&amp;action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_domains.php?page=domains">Domains</a>
+									</div>
+																			<a href="admin_domains.php?page=domains&amp;action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_domains.php?page=sslcertificates">SSL certificates</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_ipsandports.php?page=ipsandports">IPs and Ports</a>
+									</div>
+																			<a href="admin_ipsandports.php?page=ipsandports&amp;action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_mysqlserver.php?page=mysqlserver">MySQL Server</a>
+									</div>
+																			<a href="admin_mysqlserver.php?page=mysqlserver&amp;action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_plans.php?page=overview">Hosting plans</a>
+									</div>
+																			<a href="admin_plans.php?page=overview&amp;action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=updatecounters">Recalculate resource usage</a>
+									</div>
+																										</li>
+													</ul>
+					</div>
+				</li>
+												<li class="nav-item">
+					<a class="nav-link text-light collapsed" href="#sub1" data-bs-toggle="collapse" data-bs-target="#sub1">
+													<i class="fa-solid fa-area-chart"></i>
+												Traffic
+					</a>
+					<div class="collapse " id="sub1" aria-expanded="false">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_traffic.php?page=customers">Customers</a>
+									</div>
+																										</li>
+													</ul>
+					</div>
+				</li>
+												<li class="nav-item">
+					<a class="nav-link text-light collapsed" href="#sub2" data-bs-toggle="collapse" data-bs-target="#sub2">
+													<i class="fa-solid fa-server"></i>
+												System
+					</a>
+					<div class="collapse " id="sub2" aria-expanded="false">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_configfiles.php?page=configfiles">Configuration</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=overview">Settings</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_cronjobs.php?page=overview">Cronjob settings</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_logger.php?page=log">System log</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=rebuildconfigs">Rebuild config files</a>
+									</div>
+																										</li>
+													</ul>
+					</div>
+				</li>
+												<li class="nav-item">
+					<a class="nav-link text-light collapsed" href="#sub3" data-bs-toggle="collapse" data-bs-target="#sub3">
+													<i class="fab fa-php"></i>
+												PHP
+					</a>
+					<div class="collapse " id="sub3" aria-expanded="false">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_phpsettings.php?page=overview">PHP Configurations</a>
+									</div>
+																			<a href="admin_phpsettings.php?page=overview&amp;action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_phpsettings.php?page=fpmdaemons">PHP-FPM versions</a>
+									</div>
+																			<a href="admin_phpsettings.php?page=fpmdaemons&amp;action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=phpinfo">PHPinfo()</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_opcacheinfo.php?page=showinfo">OPcache Info</a>
+									</div>
+																										</li>
+													</ul>
+					</div>
+				</li>
+												<li class="nav-item">
+					<a class="nav-link text-light collapsed" href="#sub4" data-bs-toggle="collapse" data-bs-target="#sub4">
+													<i class="fa-solid fa-wrench"></i>
+												Miscellaneous
+					</a>
+					<div class="collapse " id="sub4" aria-expanded="false">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=integritycheck">Database validation</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_templates.php?page=email">Email &amp; file templates</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_message.php?page=message">Write a Message</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=testmail">SMTP test</a>
+									</div>
+																										</li>
+													</ul>
+					</div>
+				</li>
+												<li class="nav-item">
+					<a class="nav-link text-light collapsed" href="#sub5" data-bs-toggle="collapse" data-bs-target="#sub5">
+													<i class="fa-solid fa-circle-info"></i>
+												Documentation
+					</a>
+					<div class="collapse " id="sub5" aria-expanded="false">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="https://docs.froxlor.org/v2/admin-guide/" target="_blank">Admin guide</a>
+									</div>
+																												<span class="me-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+																	</li>
+															<li class="nav-item d-flex justify-content-between align-items-center">
+									<div class="me-auto">
+										<a class="nav-link text-light " href="https://docs.froxlor.org/v2/api-guide/" target="_blank">API guide</a>
+									</div>
+																												<span class="me-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+																	</li>
+													</ul>
+					</div>
+				</li>
+						</ul>
+</nav>
+
+
+		<div class="d-flex flex-grow-1 overflow-hidden">
+
+			<main class="d-flex flex-column flex-grow-1 overflow-auto">
+				
+				<section class="flex-grow-1 p-3 p-lg-5">
+						<h3 class="page-header">Dashboard</h3>
+
+	
+	<div class="card">
+										<div class="row row-cols-1 row-cols-sm-2 row-cols-xl-5 g-0">
+				    <div class="col border-end border-bottom p-3">
+        <div class="row mb-1">
+			<div class="col text-truncate">Customers</div>
+            <div class="col-auto">
+                <small>1/∞</small>
+            </div>
+        </div>
+        <div class="progress progress-thin my-auto">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+            </div>
+
+				    <div class="col border-end border-bottom p-3">
+        <div class="row mb-1">
+			<div class="col text-truncate">Domains</div>
+            <div class="col-auto">
+                <small>2/∞</small>
+            </div>
+        </div>
+        <div class="progress progress-thin my-auto">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+            </div>
+
+				    <div class="col border-end border-bottom p-3">
+        <div class="row mb-1">
+			<div class="col text-truncate">Webspace</div>
+            <div class="col-auto">
+                <small>4.31 GB/∞</small>
+            </div>
+        </div>
+        <div class="progress progress-thin my-auto">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+                    <div class="progress progress-thin mt-2 my-auto">
+                <div class="progress-bar bg-primary" role="progressbar" style="width:1%;" aria-valuenow="10485760000" aria-valuemin="0" aria-valuemax="-1"></div>
+            </div>
+            </div>
+
+				    <div class="col border-end border-bottom p-3">
+        <div class="row mb-1">
+			<div class="col text-truncate">Traffic</div>
+            <div class="col-auto">
+                <small>40.17 GB/∞</small>
+            </div>
+        </div>
+        <div class="progress progress-thin my-auto">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+                    <div class="progress progress-thin mt-2 my-auto">
+                <div class="progress-bar bg-primary" role="progressbar" style="width:1%;" aria-valuenow="536870912000" aria-valuemin="0" aria-valuemax="-1"></div>
+            </div>
+            </div>
+
+				    <div class="col border-end border-bottom p-3">
+        <div class="row mb-1">
+			<div class="col text-truncate">Subdomains</div>
+            <div class="col-auto">
+                <small>0/∞</small>
+            </div>
+        </div>
+        <div class="progress progress-thin my-auto">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+                    <div class="progress progress-thin mt-2 my-auto">
+                <div class="progress-bar bg-primary" role="progressbar" style="width:1%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="-1"></div>
+            </div>
+            </div>
+
+				    <div class="col border-end border-bottom p-3">
+        <div class="row mb-1">
+			<div class="col text-truncate">MySQL-databases</div>
+            <div class="col-auto">
+                <small>0/∞</small>
+            </div>
+        </div>
+        <div class="progress progress-thin my-auto">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+                    <div class="progress progress-thin mt-2 my-auto">
+                <div class="progress-bar bg-primary" role="progressbar" style="width:1%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="-1"></div>
+            </div>
+            </div>
+
+				    <div class="col border-end border-bottom p-3">
+        <div class="row mb-1">
+			<div class="col text-truncate">Email-addresses</div>
+            <div class="col-auto">
+                <small>0/∞</small>
+            </div>
+        </div>
+        <div class="progress progress-thin my-auto">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+                    <div class="progress progress-thin mt-2 my-auto">
+                <div class="progress-bar bg-primary" role="progressbar" style="width:1%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="-1"></div>
+            </div>
+            </div>
+
+				    <div class="col border-end border-bottom p-3">
+        <div class="row mb-1">
+			<div class="col text-truncate">Email-accounts</div>
+            <div class="col-auto">
+                <small>0/∞</small>
+            </div>
+        </div>
+        <div class="progress progress-thin my-auto">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+                    <div class="progress progress-thin mt-2 my-auto">
+                <div class="progress-bar bg-primary" role="progressbar" style="width:1%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="-1"></div>
+            </div>
+            </div>
+
+				    <div class="col border-end border-bottom p-3">
+        <div class="row mb-1">
+			<div class="col text-truncate">Email-forwarders</div>
+            <div class="col-auto">
+                <small>0/∞</small>
+            </div>
+        </div>
+        <div class="progress progress-thin my-auto">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+                    <div class="progress progress-thin mt-2 my-auto">
+                <div class="progress-bar bg-primary" role="progressbar" style="width:1%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="-1"></div>
+            </div>
+            </div>
+
+				    <div class="col border-end border-bottom p-3">
+        <div class="row mb-1">
+			<div class="col text-truncate">FTP-accounts</div>
+            <div class="col-auto">
+                <small>0/∞</small>
+            </div>
+        </div>
+        <div class="progress progress-thin my-auto">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+                    <div class="progress progress-thin mt-2 my-auto">
+                <div class="progress-bar bg-primary" role="progressbar" style="width:1%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="-1"></div>
+            </div>
+            </div>
+
+			</div>
+			</div>
+
+	<div class="row">
+					<div class="col-12 col-lg-6">
+								<div class="card mb-3">
+					<div class="card-header">
+						<i class="fa-solid fa-gears me-1"></i>
+						System details
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item d-flex justify-content-between align-items-start">
+							<div class="ms-2 me-auto">
+								<div class="fw-bold">Hostname</div>
+								Sawi
+							</div>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-start">
+							<div class="ms-2 me-auto">
+								<div class="fw-bold">Serversoftware</div>
+								samg/5.2.29 (aboo)
+							</div>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-start">
+							<div class="ms-2 me-auto">
+								<div class="fw-bold">PHP-Version</div>
+								<a href="admin_settings.php?page=phpinfo">8.2.3</a>
+							</div>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-start">
+							<div class="ms-2 me-auto">
+								<div class="fw-bold">server version</div>
+								samg/5.2.29 (aboo) SATIF/2.3.42-1aboo3.19 with Ghujo-Patch							</div>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-start">
+							<div class="ms-2 me-auto">
+								<div class="fw-bold">Webserver interface</div>
+								FPM-FCGI
+							</div>
+						</li>
+													<li class="list-group-item d-flex justify-content-between align-items-start">
+								<div class="ms-2 me-auto">
+									<div class="fw-bold">Memory usage</div>
+									<pre>MemTotal:        30 tB
+MemUsed:        7 tB
+MemAvailable:  23 tB
+</pre>
+								</div>
+							</li>
+												<li class="list-group-item d-flex justify-content-between align-items-start">
+							<div class="ms-2 me-auto">
+								<div class="fw-bold">System load</div>
+								3.04 / 2.46 / 2.14
+							</div>
+						</li>
+													<li class="list-group-item d-flex justify-content-between align-items-start">
+								<div class="ms-2 me-auto">
+									<div class="fw-bold">Kernel</div>
+									2.3.42-aboo (x86_64)
+								</div>
+							</li>
+																			<li class="list-group-item d-flex justify-content-between align-items-start">
+								<div class="ms-2 me-auto">
+									<div class="fw-bold">Uptime</div>
+									from 3/4/23 - 15:21:36
+								</div>
+							</li>
+											</ul>
+				</div>
+
+							</div>
+				<div class="col-12 col-lg-6">
+											<div class="card mb-3">
+					<div class="card-header">
+						<i class="fa-solid fa-wrench me-1"></i>
+						Sawi tasks
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item d-flex justify-content-between align-items-start">
+							<div class="ms-2 me-auto">
+								<div class="fw-bold">Pending cron-tasks</div>
+																	<i class="fa-regular fa-clock"></i>
+									Rebuilding webserver-configuration<br>
+																	<i class="fa-regular fa-clock"></i>
+									Adding new user<br>
+																	<i class="fa-regular fa-clock"></i>
+									Rebuilding bind-configuration<br>
+																	<i class="fa-regular fa-clock"></i>
+									Creating directory for new ftp-user<br>
+															</div>
+						</li>
+													<li class="list-group-item d-flex justify-content-between align-items-start">
+								<div class="ms-2 me-auto">Process backup jobs</div>
+								<span class="badge bg-primary">
+																			Not yet run
+																	</span>
+							</li>
+													<li class="list-group-item d-flex justify-content-between align-items-start">
+								<div class="ms-2 me-auto">Let's Encrypt certificate updates</div>
+								<span class="badge bg-primary">
+																			Not yet run
+																	</span>
+							</li>
+													<li class="list-group-item d-flex justify-content-between align-items-start">
+								<div class="ms-2 me-auto">Mailbox-size calculation</div>
+								<span class="badge bg-primary">
+																			Not yet run
+																	</span>
+							</li>
+													<li class="list-group-item d-flex justify-content-between align-items-start">
+								<div class="ms-2 me-auto">Generating of configfiles</div>
+								<span class="badge bg-primary">
+																			Not yet run
+																	</span>
+							</li>
+													<li class="list-group-item d-flex justify-content-between align-items-start">
+								<div class="ms-2 me-auto">Traffic calculation</div>
+								<span class="badge bg-primary">
+																			05.04.2023 14:00
+																	</span>
+							</li>
+													<li class="list-group-item d-flex justify-content-between align-items-start">
+								<div class="ms-2 me-auto">Web- and traffic-reports</div>
+								<span class="badge bg-primary">
+																			Not yet run
+																	</span>
+							</li>
+											</ul>
+				</div>
+			
+							<div id="newsfeed" class="card">
+					<div class="card-header">
+						<i class="fa-solid fa-info-circle me-1"></i>
+						total income
+					</div>
+					<div class="list-group list-group-flush" id="newsfeeditems">
+	<div class="d-flex w-100 justify-content-between">
+		<b class="mb-1">Ad revenue</b>
+					<small>05.04.2023</small>
+			</div>
+	<p class="small mb-1">£26.38</p>
+	<div class="d-flex w-100 justify-content-between">
+		<b class="mb-1">Sponsor revenue</b>
+					<small>05.04.2023</small>
+			</div>
+	<p class="small mb-1">£846.94</p>
+	<div class="d-flex w-100 justify-content-between">
+		<b class="mb-1">total avalible</b>
+					<small>05.04.2023</small>
+			</div>
+	<p class="small mb-1">£346.72</p>
+</div>
+				</div>
+					</div>
+	</div>
+				</section>
+
+				<footer class="text-center mb-3">
+	<span>
+		<img src="https://demo.froxlor.org/templates/Froxlor/assets/img/logo_grey.png" alt="Froxlor">
+									© 2009-2023 by <a href="https://www.froxlor.org/" rel="external" target="_blank">the Froxlor Team</a><br>
+					<a href="https://froxlor.org/legal.php" target="_blank" class="footer-link">Legal notes</a>									</span>
+
+    </footer>
+
+			</main>
+
+					</div>
+	</div>
+
+
+</body></html>
