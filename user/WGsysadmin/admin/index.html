@@ -1,327 +1,871 @@
-<html><head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Admin Jenny | Will Graves</title>
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" type="text/css">
-
-	<script src="/admin/frontend/assets/global.bundle.js"></script>
-	<script src="/admin/frontend/assets/design-system.bundle.js"></script>
-	<script src="/admin/frontend/assets/app.bundle.js"></script>
-	<script src="/admin/frontend/assets/components.bundle.js"></script>
-	<link rel="stylesheet" type="text/css" href="/custom.css">
-  <style data-styled="active" data-styled-version="5.3.6"></style>
-  <meta http-equiv="origin-trial" content="A727AcAeLCei/ZogJHBlJUS63SxP6AeIROo7qXrkjrxkoxBu0eSSmypAHmGYwk4HjBMQp5nxCFODzfVnUIe31AQAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjg4MDgzMTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SaWi | admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/assets/vendors/iconfonts/ionicons/dist/css/ionicons.css">
+    <link rel="stylesheet" href="http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="/css/vendor.bundle.addons.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/assets/css/shared/style.css">
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/assets/css/demo_1/style.css">
+    <!-- End Layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+  </head>
   <body>
-	<div id="app">
-		<section height="100%" class="box__Box-sc-17sbq3p-0 cmvNtP adminjs_Box">
-			<section class="box__Box-sc-17sbq3p-0 sidebar__StyledSidebar-sc-rspq5q-0 iJHcfw bfnWID hidden" width="sidebarWidth" display="flex">
-				<a class="sidebar-branding__StyledLogo-sc-13gs4e8-0 gmkEqg adminjs_Logo" href="/admin">
-					<img src="/admin/frontend/assets/logo.svg" alt="AdminJS demo page">
-				</a>
-				<section class="box__Box-sc-17sbq3p-0 dqhCWc adminjs_Resources">
-					<section class="box__Box-sc-17sbq3p-0 navigation-styled__StyledNavigation-sc-nflrrk-0 iWdqdE bTKlUw adminjs_Box">
-						<label class="label__Label-sc-o90s7d-0 kCBtht adminjs_Label">Navigation</label>
-						<ul>
-							<li>
-								<a class="box__Box-sc-17sbq3p-0 navigation-element-styled__StyledNavigationElement-sc-1qs8qs7-0 jutotV hNhjfV adminjs_Box">
-									<span class="box__Box-sc-17sbq3p-0 kXzmzX icon-box">
-										<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-											<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-												<path d="M28,6H4A2,2,0,0,0,2,8V24a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V8A2,2,0,0,0,28,6Zm0,2v3H4V8ZM4,24V13H28V24Z"></path>
-												<path d="M6 20H16V22H6z"></path>
-											</svg>
-										</span>
-									</span>
-									<div class="title__Title-sc-t3budf-0 gqRdJf" style="white-space: normal;">REST</div>
-									<span class="box__Box-sc-17sbq3p-0 kXzmzX arrow-box">
-										<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-											<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-												<path d="M8 5L13 10 12.3 10.7 8 6.4 3.7 10.7 3 10z"></path>
-											</svg>
-										</span>
-									</span>
-								</a>
-								<ul>
-									<li>
-										<a href="/admin/resources/crypto-database" class="box__Box-sc-17sbq3p-0 navigation-element-styled__StyledNavigationElement-sc-1qs8qs7-0 jutotV gpjuay adminjs_Box">
-											<div class="title__Title-sc-t3budf-0 gqRdJf" style="white-space: normal;">Crypto Database</div>
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a class="box__Box-sc-17sbq3p-0 navigation-element-styled__StyledNavigationElement-sc-1qs8qs7-0 jutotV gpjuay adminjs_Box">
-									<span class="box__Box-sc-17sbq3p-0 kXzmzX icon-box">
-										<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-											<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-												<path d="M12,30H9V28h3V15.5664L8.4854,13.4575l1.0292-1.7148,3.5147,2.1084A2.0115,2.0115,0,0,1,14,15.5664V28A2.0023,2.0023,0,0,1,12,30Z"></path>
-												<path d="M22,30H19a2.0024,2.0024,0,0,1-2-2V17h6a4.0008,4.0008,0,0,0,3.981-4.396A4.1489,4.1489,0,0,0,22.7853,9H21.2016L21.025,8.221C20.452,5.6961,18.0308,4,15,4A6.02,6.02,0,0,0,9.5585,7.4859L9.25,8.1531l-.863-.1143A2.771,2.771,0,0,0,8,8a4,4,0,1,0,0,8v2A6,6,0,1,1,8,6c.0264,0,.0525,0,.0786.001A8.0271,8.0271,0,0,1,15,2c3.6788,0,6.6923,1.9776,7.7516,5h.0337a6.1641,6.1641,0,0,1,6.1872,5.4141A6.0011,6.0011,0,0,1,23,19l-4,0v9h3Z"></path>
-											</svg>
-										</span>
-									</span>
-									<div class="title__Title-sc-t3budf-0 gqRdJf" style="white-space: normal;">Mongoose Resources</div>
-									<span class="box__Box-sc-17sbq3p-0 kXzmzX arrow-box">
-										<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-											<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-												<path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
-											</svg>
-										</span>
-									</span>
-								</a>
-							</li>
-							<a class="box__Box-sc-17sbq3p-0 navigation-element-styled__StyledNavigationElement-sc-1qs8qs7-0 jutotV gpjuay adminjs_Box">
-								<span class="box__Box-sc-17sbq3p-0 kXzmzX icon-box">
-									<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-										<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-											<path d="M24 21L24 9 22 9 22 23 30 23 30 21 24 21zM18 9H14a2 2 0 00-2 2V21a2 2 0 002 2h1v2a2 2 0 002 2h2V25H17V23h1a2 2 0 002-2V11A2 2 0 0018 9zM14 21V11h4V21zM8 23H2V21H8V17H4a2 2 0 01-2-2V11A2 2 0 014 9h6v2H4v4H8a2 2 0 012 2v4A2 2 0 018 23z"></path>
-										</svg>
-									</span>
-								</span>
-								<div class="title__Title-sc-t3budf-0 gqRdJf" style="white-space: normal;">Sequelize Resources</div>
-								<span class="box__Box-sc-17sbq3p-0 kXzmzX arrow-box">
-									<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-										<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-											<path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
-										</svg>
-									</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a class="box__Box-sc-17sbq3p-0 navigation-element-styled__StyledNavigationElement-sc-1qs8qs7-0 jutotV gpjuay adminjs_Box">
-								<span class="box__Box-sc-17sbq3p-0 kXzmzX icon-box">
-									<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-										<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-											<path d="M11.4141,15l-8-8L2,8.4141,8.5859,15H2v1a14,14,0,0,0,28,0V15ZM16,28A12.0166,12.0166,0,0,1,4.0415,17h23.917A12.0166,12.0166,0,0,1,16,28Z"></path>
-											<path d="M22,8a5.0049,5.0049,0,0,0-1.5708.2554A8.0242,8.0242,0,0,0,14,5,7.9364,7.9364,0,0,0,9.0938,6.68L4.4141,2,3,3.4141,9.05,9.4648l.707-.7075A5.96,5.96,0,0,1,14,7a6.02,6.02,0,0,1,4.6875,2.2642,5.06,5.06,0,0,0-.59.61A2.9892,2.9892,0,0,1,15.7544,11H12v2h3.7544a4.98,4.98,0,0,0,3.9033-1.8745A3,3,0,0,1,25,13h2A5.0059,5.0059,0,0,0,22,8Z"></path>
-										</svg>
-									</span>
-								</span>
-								<div class="title__Title-sc-t3budf-0 gqRdJf" style="white-space: normal;">Typeorm Resources</div>
-								<span class="box__Box-sc-17sbq3p-0 kXzmzX arrow-box">
-									<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-										<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-											<path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
-										</svg>
-									</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a class="box__Box-sc-17sbq3p-0 navigation-element-styled__StyledNavigationElement-sc-1qs8qs7-0 jutotV gpjuay adminjs_Box">
-								<span class="box__Box-sc-17sbq3p-0 kXzmzX icon-box">
-									<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-										<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-											<path d="M16 10a6 6 0 00-6 6v8a6 6 0 0012 0V16A6 6 0 0016 10zm-4.25 7.87h8.5v4.25h-8.5zM16 28.25A4.27 4.27 0 0111.75 24v-.13h8.5V24A4.27 4.27 0 0116 28.25zm4.25-12.13h-8.5V16a4.25 4.25 0 018.5 0zM30.66 19.21L24 13v9.1a4 4 0 008 0A3.83 3.83 0 0030.66 19.21zM28 24.35a2.25 2.25 0 01-2.25-2.25V17l3.72 3.47h0A2.05 2.05 0 0130.2 22 2.25 2.25 0 0128 24.35zM0 22.1a4 4 0 008 0V13L1.34 19.21A3.88 3.88 0 000 22.1zm2.48-1.56h0L6.25 17v5.1a2.25 2.25 0 01-4.5 0A2.05 2.05 0 012.48 20.54zM15 5.5A3.5 3.5 0 1011.5 9 3.5 3.5 0 0015 5.5zm-5.25 0A1.75 1.75 0 1111.5 7.25 1.77 1.77 0 019.75 5.5zM20.5 2A3.5 3.5 0 1024 5.5 3.5 3.5 0 0020.5 2zm0 5.25A1.75 1.75 0 1122.25 5.5 1.77 1.77 0 0120.5 7.25z"></path>
-										</svg>
-									</span>
-								</span>
-								<div class="title__Title-sc-t3budf-0 gqRdJf" style="white-space: normal;">Mikroorm Resources</div>
-								<span class="box__Box-sc-17sbq3p-0 kXzmzX arrow-box">
-									<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-										<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-											<path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
-										</svg>
-									</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a class="box__Box-sc-17sbq3p-0 navigation-element-styled__StyledNavigationElement-sc-1qs8qs7-0 jutotV gpjuay adminjs_Box">
-								<span class="box__Box-sc-17sbq3p-0 kXzmzX icon-box">
-									<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-										<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-											<path d="M29.53,6.15a1,1,0,0,0-1,0L20,10.38V7a1,1,0,0,0-1.45-.89L10,10.38V3A1,1,0,0,0,9,2H3A1,1,0,0,0,2,3V28H30V7A1,1,0,0,0,29.53,6.15ZM22,26H18V19h4Zm6,0H24V18a1,1,0,0,0-1-1H17a1,1,0,0,0-1,1v8H4V4H8v9.62l10-5v5l10-5Z"></path>
-										</svg>
-									</span>
-								</span>
-								<div class="title__Title-sc-t3budf-0 gqRdJf" style="white-space: normal;">Prisma Resources</div>
-								<span class="box__Box-sc-17sbq3p-0 kXzmzX arrow-box">
-									<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-										<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-											<path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
-										</svg>
-									</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a class="box__Box-sc-17sbq3p-0 navigation-element-styled__StyledNavigationElement-sc-1qs8qs7-0 jutotV gpjuay adminjs_Box">
-								<span class="box__Box-sc-17sbq3p-0 kXzmzX icon-box">
-									<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-										<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-											<path d="M23 22L21 22 21 20 19 20 19 22 17 22 17 20 15 20 15 22 13 22 13 20 11 20 11 22 9 22 9 24 11 24 11 26 13 26 13 24 15 24 15 26 17 26 17 24 19 24 19 26 21 26 21 24 23 24 23 22z"></path>
-											<path d="M28,11H27V4a2.0025,2.0025,0,0,0-2-2H7A2.0025,2.0025,0,0,0,5,4v7H4a2.0025,2.0025,0,0,0-2,2v4a2.0025,2.0025,0,0,0,2,2H5v4a7.0078,7.0078,0,0,0,7,7h8a7.0078,7.0078,0,0,0,7-7V19h1a2.0025,2.0025,0,0,0,2-2V13A2.0025,2.0025,0,0,0,28,11ZM25,4V7.3818L22.4473,6.1055a1.0008,1.0008,0,0,0-.8946,0L18,7.8818,14.4473,6.1055a1.0008,1.0008,0,0,0-.8946,0L10,7.8818l-3-1.5V4Zm3,13H25v6a5.0057,5.0057,0,0,1-5,5H12a5.0057,5.0057,0,0,1-5-5V17H4V13H7V8.6182L9.5527,9.8945a1.0008,1.0008,0,0,0,.8946,0L14,8.1182l3.5527,1.7763a1.001,1.001,0,0,0,.8946,0L22,8.1182l3,1.5V13h3Z"></path>
-											<path d="M9 14H14V16H9zM18 14H23V16H18z"></path>
-										</svg>
-									</span>
-								</span>
-								<div class="title__Title-sc-t3budf-0 gqRdJf" style="white-space: normal;">Objection Resources</div>
-								<span class="box__Box-sc-17sbq3p-0 kXzmzX arrow-box">
-									<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-										<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
-											<path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
-										</svg>
-									</span>
-								</span>
-							</a>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="box__Box-sc-17sbq3p-0 navigation-styled__StyledNavigation-sc-nflrrk-0 iWdqdE bTKlUw adminjs_Box">
-				<label class="label__Label-sc-o90s7d-0 kCBtht adminjs_Label">Pages</label>
-				<ul>
-					<li>
-						<a href="/admin/pages/Custom Page" class="box__Box-sc-17sbq3p-0 navigation-element-styled__StyledNavigationElement-sc-1qs8qs7-0 jutotV gpjuay adminjs_Box">
-							<span class="box__Box-sc-17sbq3p-0 kXzmzX icon-box">
-								<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-									<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-										<path d="M28,6H4A2,2,0,0,0,2,8V24a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V8A2,2,0,0,0,28,6Zm0,2v3H4V8ZM4,24V13H28V24Z"></path>
-										<path d="M6 20H16V22H6z"></path>
-									</svg>
-								</span>
-							</span>
-							<div class="title__Title-sc-t3budf-0 gqRdJf" style="white-space: normal;">Custom Page</div>
-						</a>
-					</li>
-					<li>
-						<a href="/admin/pages/Design system example" class="box__Box-sc-17sbq3p-0 navigation-element-styled__StyledNavigationElement-sc-1qs8qs7-0 jutotV gpjuay adminjs_Box">
-							<span class="box__Box-sc-17sbq3p-0 kXzmzX icon-box">
-								<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-									<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-										<path d="M16 17v8H6V17H16m0-2H6a2 2 0 00-2 2v8a2 2 0 002 2H16a2 2 0 002-2V17a2 2 0 00-2-2zM27 6v5H17V6H27m0-2H17a2 2 0 00-2 2v5a2 2 0 002 2H27a2 2 0 002-2V6a2 2 0 00-2-2zM27 17v5H22V17h5m0-2H22a2 2 0 00-2 2v5a2 2 0 002 2h5a2 2 0 002-2V17a2 2 0 00-2-2zM11 6v5H6V6h5m0-2H6A2 2 0 004 6v5a2 2 0 002 2h5a2 2 0 002-2V6a2 2 0 00-2-2z"></path>
-									</svg>
-								</span>
-							</span>
-							<div class="title__Title-sc-t3budf-0 gqRdJf" style="white-space: normal;">Design system example</div>
-						</a>
-					</li>
-				</ul>
-			</section>
-			<section class="box__Box-sc-17sbq3p-0 lhQBds adminjs_Box">
-				<section class="box__Box-sc-17sbq3p-0 made-with-love__StyledWrapper-sc-1aoiffx-0 eKFhdU fHRVEA adminjs_Box" color="grey60" display="flex">
-					<span class="text__Text-sc-wqowgj-0 cZskJQ adminjs_Text">Made with</span>
-					<span class="icon__Wrapper-sc-1q2pe0x-0 fSHgQv adminjs_Icon" color="love">
-						<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-							<path d="M22.5,4c-2,0-3.9,0.8-5.3,2.2L16,7.4l-1.1-1.1C12,3.3,7.2,3.3,4.3,6.2c0,0-0.1,0.1-0.1,0.1c-3,3-3,7.8,0,10.8L16,29 l11.8-11.9c3-3,3-7.8,0-10.8C26.4,4.8,24.5,4,22.5,4z"></path>
-						</svg>
-					</span>
-					<span class="text__Text-sc-wqowgj-0 cZskJQ adminjs_Text">by</span>
-					<a href="https://adminjs.co/" target="_blank" rel="noopener noreferrer" color="grey60" class="link__Link-sc-diawqz-0 made-with-love__StyledLink-sc-1aoiffx-1 kBldwk bVubIj adminjs_Link">AdminJS Team</a>
-				</section>
-			</section>
-		</section>
-		<section class="box__Box-sc-17sbq3p-0 jQEZsx adminjs_Box">
-			<section class="box__Box-sc-17sbq3p-0 top-bar__NavBar-sc-vpnnkx-0 kXzmzX jkEgvf adminjs_NavBar">
-				<section display="block,block,block,block,none" class="box__Box-sc-17sbq3p-0 ilYGNW adminjs_Box" style="cursor: pointer;">
-					<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-						<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
-							<path d="M4 6H28V8H4zM4 24H28V26H4zM4 12H28V14H4zM4 18H28V20H4z"></path>
-						</svg>
-					</span>
-				</section>
-				<section class="box__Box-sc-17sbq3p-0 iGiHXJ adminjs_Version">
-					<div class="text__Text-sc-wqowgj-0 version__VersionItem-sc-r49gcr-0 jWQLck gOqnXG adminjs_Text" display="none,block" color="grey100">Admin: 6.2.5-demo.1</div>
-					<div class="text__Text-sc-wqowgj-0 version__VersionItem-sc-r49gcr-0 jWQLck gOqnXG adminjs_Text" display="none,block" color="grey100">App: 2.0.0</div>
-				</section>
-				<section class="box__Box-sc-17sbq3p-0 cOPERV adminjs_Box">
-					<section class="box__Box-sc-17sbq3p-0 current-user-nav-styled__StyledCurrentUserNav-sc-1acsbol-0 jutotV itsfIQ adminjs_Box">
-						<div display="flex" class="drop-down__StyledDropDown-sc-zyox4o-0 cTljhx">
-							<section height="navbarHeight" class="box__Box-sc-17sbq3p-0 ihGxKO adminjs_Box">
-								<section class="box__Box-sc-17sbq3p-0 kXzmzX adminjs_Box">
-									<div class="title__Title-sc-t3budf-0 gqRdJf">admin@example.com</div>
-								</section>
-								<span class="icon__Wrapper-sc-1q2pe0x-0 dvhBvq adminjs_Icon" color="grey100">
-									<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-										<circle cx="16" cy="8" r="2"></circle>
-										<circle cx="16" cy="16" r="2"></circle>
-										<circle cx="16" cy="24" r="2"></circle>
-									</svg>
-								</span>
-							</section>
-							<section class="box__Box-sc-17sbq3p-0 drop-down-menu__DropDownMenu-sc-1kjt9mj-0 gMTHNK gAXBlC adminjs_Box adminjs_DropDown-Stick-right adminjs_DropDownMenu adminjs_Box">
-								<a class="box__Box-sc-17sbq3p-0 drop-down-item__DropDownItem-sc-z70z88-0 kXzmzX gCEKwU adminjs_Box">
-									<span class="icon__Wrapper-sc-1q2pe0x-0 kHsmXj adminjs_Icon" color="grey100">
-										<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true">
-											<path d="M6,30H18a2.0023,2.0023,0,0,0,2-2V25H18v3H6V4H18V7h2V4a2.0023,2.0023,0,0,0-2-2H6A2.0023,2.0023,0,0,0,4,4V28A2.0023,2.0023,0,0,0,6,30Z"></path>
-											<path d="M20.586 20.586L24.172 17 10 17 10 15 24.172 15 20.586 11.414 22 10 28 16 22 22 20.586 20.586z"></path>
-										</svg>
-									</span>Log out</a>
-								</section>
-							</div>
-						</section>
-					</section>
-				</section>
-				<section class="box__Box-sc-17sbq3p-0 hOPpRU adminjs_Box">
-					<div>
-
-					</div>
-				</section>
-				<section class="box__Box-sc-17sbq3p-0 kXzmzX adminjs_Box">
-					<section overflow="hidden" class="box__Box-sc-17sbq3p-0 fRCmHQ adminjs_Box">
-						<section opacity="0.2,0.4,1" class="box__Box-sc-17sbq3p-0 cykcVP adminjs_Box">
-							<svg width="249px" height="179px" viewBox="0 0 249 179" version="1.1" xmlns="http://www.w3.org/2000/svg">
-								<defs>
-									<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-										<stop stop-color="#FFAB86" offset="0%"></stop>
-										<stop stop-color="#FFB44E" offset="100%"></stop>
-									</linearGradient>
-									<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
-										<stop stop-color="#FFAB86" offset="0%"></stop>
-										<stop stop-color="#FFB44E" offset="100%"></stop>
-									</linearGradient>
-									<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
-										<stop stop-color="#FFF2B1" offset="0%"></stop>
-										<stop stop-color="#FFEA7E" offset="100%"></stop>
-									</linearGradient>
-									<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
-										<stop stop-color="#FFF2B1" offset="0%"></stop>
-										<stop stop-color="#FFCD7E" offset="100%"></stop>
-									</linearGradient>
-									<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
-										<stop stop-color="#FFAB86" offset="0%"></stop>
-										<stop stop-color="#FFB44E" offset="100%"></stop>
-									</linearGradient>
-									<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
-										<stop stop-color="#FFF2B1" offset="0%"></stop>
-										<stop stop-color="#FFEA7E" offset="100%"></stop>
-									</linearGradient>
-									<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
-										<stop stop-color="#FFF2B1" offset="0%"></stop>
-										<stop stop-color="#FFCD7E" offset="100%"></stop>
-									</linearGradient>
-								</defs>
-								<g id="Main-Templates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-									<g id="Rocket-with-motion" transform="translate(140.500000, 74.000000) rotate(17.000000) translate(-140.500000, -74.000000) translate(19.000000, -40.000000)">
-										<g id="Rocket" transform="translate(137.662345, 112.855740) rotate(7.000000) translate(-137.662345, -112.855740) translate(44.162345, 11.355740)">
-											<g id="Group-15">
-												<ellipse id="Oval-Copy-29" fill="#F4E8DB" cx="116.379625" cy="57.5932962" rx="2.01348833" ry="2.01375162"></ellipse>
-												<ellipse id="Oval-Copy-31" fill="#F4E8DB" cx="34.2293016" cy="155.058874" rx="2.01348833" ry="2.01375162"></ellipse>
-												<ellipse id="Oval-Copy-19" fill="#F4E8DB" cx="160.273671" cy="140.157112" rx="4.02697665" ry="4.02750323"></ellipse>
-												<ellipse id="Oval-Copy-23" fill="#F4E8DB" cx="74.0963704" cy="51.5520414" rx="4.02697665" ry="4.02750323"></ellipse>
-												<g id="Group-13" transform="translate(7.404023, 136.898722)"><path d="M29.2933675,62.4051811 C35.8296538,62.4051811 41.1280139,56.981389 41.127586,50.2898688 C41.1271581,43.5983485 33.1286817,0.598536152 29.2894151,0.598536152 C25.4501486,0.598536152 17.4571716,43.5968348 17.4575995,50.2883551 C17.4580274,56.9798753 22.7570812,62.4051811 29.2933675,62.4051811 Z" id="Oval-Copy-38" fill="url(#linearGradient-2)" transform="translate(29.292593, 31.501859) rotate(-141.000000) translate(-29.292593, -31.501859) "></path>
-													<path d="M31.7199672,52.9593428 C36.0774914,52.9593428 39.6097439,49.5375303 39.6094739,45.3158883 C39.609204,41.0942463 36.2259176,5.20641018 31.9585807,5.20641018 C27.6912437,5.20641018 23.829213,41.0932372 23.8294829,45.3148792 C23.8297529,49.5365212 27.362443,52.9593428 31.7199672,52.9593428 Z" id="Oval-Copy-39" fill="url(#linearGradient-3)" transform="translate(31.719478, 29.082876) rotate(-141.000000) translate(-31.719478, -29.082876) "></path>
-													<path d="M34.9968773,41.9727682 C38.5555221,41.9727682 41.440206,39.3509657 41.4399991,36.1163003 C41.4397923,32.8816348 39.1523789,8.14353111 35.5937342,8.14353111 C32.0350894,8.14353111 28.5527996,32.8808107 28.5530065,36.1154762 C28.5532133,39.3501416 31.4382326,41.9727682 34.9968773,41.9727682 Z" id="Oval-Copy-39" fill="url(#linearGradient-4)" transform="translate(34.996503, 25.058150) rotate(-141.000000) translate(-34.996503, -25.058150) "></path>
-												</g>
-												<g id="Group-11" transform="translate(102.175136, 89.252917) rotate(40.000000) translate(-102.175136, -89.252917) translate(59.675136, 8.752917)" fill-rule="nonzero" stroke="#C9D1F6" stroke-width="1.97424893">
-													<path d="M67.7777024,49.7502517 L70.9362925,43.3067657 C71.4162191,42.3277211 72.598949,41.9231061 73.5779935,42.4030327 C73.9711105,42.5957382 74.289021,42.9136487 74.4817265,43.3067657 L77.6403166,49.7502517 C78.8999695,52.3199286 79.5548698,55.1437885 79.5548698,58.0055999 L79.5548698,151.358137 C79.5548698,151.903311 79.1129192,152.345261 78.5677454,152.345261 L66.8502737,152.345261 C66.3050999,152.345261 65.8631492,151.903311 65.8631492,151.358137 L65.8631492,58.0055999 C65.8631492,55.1437885 66.5180495,52.3199286 67.7777024,49.7502517 Z" id="Rectangle" fill="#FFFFFF" stroke-linejoin="round"></path>
-													<path d="M7.91445895,50.2479489 L11.0730491,43.8044629 C11.5529757,42.8254183 12.7357055,42.4208033 13.7147501,42.9007299 C14.107867,43.0934354 14.4257776,43.4113459 14.6184831,43.8044629 L17.7770732,50.2479489 C19.0367261,52.8176258 19.6916264,55.6414857 19.6916264,58.5032971 L19.6916264,151.855834 C19.6916264,152.401008 19.2496757,152.842959 18.7045019,152.842959 L6.98703021,152.842959 C6.44185643,152.842959 5.99990575,152.401008 5.99990575,151.855834 L5.99990575,58.5032971 C5.99990575,55.6414857 6.65480605,52.8176258 7.91445895,50.2479489 Z" id="Rectangle-Copy-11" fill="#FFFFFF" stroke-linejoin="round"></path>
-													<path d="M33.0906011,11.354303 L39.4002623,2.2723825 C40.6444904,0.481481126 43.104949,0.0383148853 44.8958504,1.282543 C45.2821175,1.55090196 45.6173309,1.88611536 45.8856899,2.2723825 L52.195351,11.354303 C57.249981,18.6297726 59.9589757,27.2769281 59.9589757,36.1359202 L59.9589757,116.427862 L59.9589757,116.427862 L25.3269765,116.427862 L25.3269765,36.1359202 C25.3269765,27.2769281 28.0359712,18.6297726 33.0906011,11.354303 Z" id="Rectangle" fill="#F0F1F9" stroke-linejoin="round"></path>
-													<path d="M51.0709343,145.945436 L52.4616111,78.430609 L57.2782797,97.1345431 C59.5841699,106.088702 64.1795587,114.289067 70.6130652,120.930158 L75.1292812,125.592095 C78.7263886,129.305267 81.1674641,133.983364 82.155819,139.057808 L83.2511862,144.681678 C83.2493456,145.075537 83.1550246,145.406318 82.9636792,145.638528 C82.7984747,145.839014 82.5607084,145.945436 82.2993925,145.945436 L51.0709343,145.945436 Z" id="Path-3" fill="#F0F1F9"></path>
-													<path d="M1.47150229,145.425806 L2.86217912,77.9109797 L7.67884773,96.6149137 C9.98473789,105.569073 14.5801267,113.769438 21.0136332,120.410529 L25.5298492,125.072466 C29.1269566,128.785638 31.5680321,133.463734 32.556387,138.538179 L33.6517543,144.162049 C33.6499136,144.555907 33.5555926,144.886689 33.3642472,145.118899 C33.1990427,145.319385 32.9612764,145.425806 32.6999605,145.425806 L1.47150229,145.425806 Z" id="Path-3-Copy" fill="#F0F1F9" transform="translate(17.779835, 108.554400) scale(-1, 1) translate(-17.779835, -108.554400) "></path>
-													<path d="M34.132116,58.9706471 L38.6749518,50.4371325 C39.9558754,48.0309746 42.9448456,47.1187919 45.3510036,48.3997155 C46.2176737,48.8610893 46.9270468,49.5704624 47.3884206,50.4371325 L51.9312564,58.9706471 C53.7557124,62.3978065 54.7099185,66.2208379 54.7099185,70.1033707 L54.7099185,151.938396 L54.7099185,151.938396 L31.3534539,151.938396 L31.3534539,70.1033707 C31.3534539,66.2208379 32.3076599,62.3978065 34.132116,58.9706471 Z" id="Rectangle-2" fill="#FFFFFF" stroke-linejoin="round"></path>
-													<path d="M59.4280489,155.429317 L25.9649033,155.429317 L25.9649033,146.347684 C25.9649033,143.83986 26.9813998,141.569451 28.6248522,139.925999 C30.2683047,138.282547 32.5387131,137.26605 35.0465369,137.26605 L50.3464153,137.26605 C52.8542392,137.26605 55.1246476,138.282547 56.7681,139.925999 C58.4115525,141.569451 59.4280489,143.83986 59.4280489,146.347684 L59.4280489,155.429317 Z" id="Rectangle" fill="#FFFFFF"></path>
-													<path d="M42.9716921,126.282389 L42.9716921,160.264511" id="Line-2" fill="#F0F1F9" stroke-linecap="round"></path>
-												</g>
-												<g id="Group-14" transform="translate(45.907534, 162.711131)">
-													<path d="M17.7186,38.6625878 C21.7220753,38.6625878 24.9673209,35.3405151 24.9670588,31.241959 C24.9667967,27.1434028 19.3527647,0.806017733 17.7161791,0.806017733 C16.0795936,0.806017733 10.46893,27.1424757 10.469192,31.2410318 C10.4694541,35.339588 13.7151246,38.6625878 17.7186,38.6625878 Z" id="Oval" fill="url(#linearGradient-5)" transform="translate(17.718125, 19.734303) rotate(-141.000000) translate(-17.718125, -19.734303) "></path>
-													<path d="M19.8990176,30.9168623 C22.5680012,30.9168623 24.7315058,28.8210022 24.7313405,26.2352465 C24.7311751,23.6494907 23.015537,3.87414324 20.3465534,3.87414324 C17.6775699,3.87414324 15.0659306,23.6488726 15.066096,26.2346284 C15.0662613,28.8203841 17.2300341,30.9168623 19.8990176,30.9168623 Z" id="Oval-Copy-35" fill="url(#linearGradient-6)" transform="translate(19.898718, 17.395503) rotate(-141.000000) translate(-19.898718, -17.395503) "></path>
-													<path d="M21.5173735,25. 4314166 C23.5191112,25.4314166 25.1417404,23.8708065 25.1416173,21.9454104 C25.1414942,20.0200143 23.8547724,5.29496477 21.8530347,5.29496477 C19.851297,5.29496477 17.8925608,20.0195507 17.8926839,21.9449468 C17.8928071,23.8703429 19.5156359,25.4314166 21.5173735,25.4314166 Z" id="Oval-Copy-40" fill="url(#linearGradient-7)" transform="translate(21.517151, 15.363191) rotate(-141.000000) translate(-21.517151, -15.363191) "></path></g><g id="Group-14-Copy" transform="translate(0.000000, 124.047100)"><path d="M17.7186,38.6625878 C21.7220753,38.6625878 24.9673209,35.3405151 24.9670588,31.241959 C24.9667967,27.1434028 19.3527647,0.806017733 17.7161791,0.806017733 C16.0795936,0.806017733 10.46893,27.1424757 10.469192,31.2410318 C10.4694541,35.339588 13.7151246,38.6625878 17.7186,38.6625878 Z" id="Oval" fill="url(#linearGradient-5)" transform="translate(17.718125, 19.734303) rotate(-141.000000) translate(-17.718125, -19.734303) "></path><path d="M19.8990176,30.9168623 C22.5680012,30.9168623 24.7315058,28.8210022 24.7313405,26.2352465 C24.7311751,23.6494907 23.015537,3.87414324 20.3465534,3.87414324 C17.6775699,3.87414324 15.0659306,23.6488726 15.066096,26.2346284 C15.0662613,28.8203841 17.2300341,30.9168623 19.8990176,30.9168623 Z" id="Oval-Copy-35" fill="url(#linearGradient-6)" transform="translate(19.898718, 17.395503) rotate(-141.000000) translate(-19.898718, -17.395503) "></path><path d="M21.5173735,25.4314166 C23.5191112,25.4314166 25.1417404,23.8708065 25.1416173,21.9454104 C25.1414942,20.0200143 23.8547724,5.29496477 21.8530347,5.29496477 C19.851297,5.29496477 17.8925608,20.0195507 17.8926839,21.9449468 C17.8928071,23.8703429 19.5156359,25.4314166 21.5173735,25.4314166 Z" id="Oval-Copy-40" fill="url(#linearGradient-7)" transform="translate(21.517151, 15.363191) rotate(-141.000000) translate(-21.517151, -15.363191) "></path></g></g><path d="M80.0494403,116.335122 C88.8076699,101.144407 113.894541,71.6934295 155.310052,27.9821891 L155.310052,13.433931 L76.2854597,24.2179367 L9.01739077,110.071572 L67.1069868,158.925202 L90.4566162,178.55709 C74.7602694,152.266493 71.2912108,131.525837 80.0494403,116.335122 Z" id="Path-8" fill-opacity="0.16" fill="#192035"></path><ellipse id="Oval" stroke="#ACB3D7" stroke-width="0.987124464" fill="#CBD5FD" cx="134.150589" cy="51.1969656" rx="6.09273175" ry="6.08892935"></ellipse><ellipse id="Oval-Copy-36" fill="#ACB3D7" cx="134.13899" cy="51.1391751" rx="3.80795734" ry="3.80558084"></ellipse><ellipse id="Oval-Copy-37" fill="#CBD4FF" cx="131.474713" cy="49.3326297" rx="2.28477441" ry="2.28334851"></ellipse><ellipse id="Oval-Copy-41" fill="#CBD4FF" cx="135.128283" cy="51.6142094" rx="1" ry="1"></ellipse></g><circle id="Oval-Copy-31" fill="#F4E8DB" cx="38.1284868" cy="108.303169" r="1"></circle><circle id="Oval-Copy-22" fill="#F4E8DB" cx="4.32112887" cy="163.723438" r="3.94849785"></circle><line x1="153.739825" y1="166.762478" x2="133.010212" y2="186.504967" id="Path-9-Copy" stroke="#F4E8DA" stroke-width="2.96137339" stroke-linecap="round" stroke-linejoin="round"></line><line x1="71.0180476" y1="196.046139" x2="54.2369317" y2="210.853006" id="Path-9-Copy-2" stroke="#F4E8DA" stroke-width="2.96137339" stroke-linecap="round" stroke-linejoin="round"></line><line x1="39.4304561" y1="139.905466" x2="27.5849626" y2="150.763835" id="Path-9-Copy-5" stroke="#F4E8DA" stroke-width="2.96137339" stroke-linecap="round" stroke-linejoin="round"></line><line x1="27.0808447" y1="220.357763" x2="18.1967246" y2="226.28051" id="Path-9-Copy-6" stroke="#F4E8DA" stroke-width="2.96137339" stroke-linecap="round" stroke-linejoin="round"></line><line x1="42.5501636" y1="169.913846" x2="4.05230955" y2="203.476077" id="Path-9-Copy-3" stroke="#F4E8DA" stroke-width="2.96137339" stroke-linecap="round" stroke-linejoin="round"></line><line x1="143.094269" y1="193.740995" x2="104.596415" y2="227.303226" id="Path-9-Copy-4" stroke="#F4E8DA" stroke-width="2.96137339" stroke-linecap="round" stroke-linejoin="round"></line></g></g></svg></section><section opacity="0.2,0.4,1" class="box__Box-sc-17sbq3p-0 ccUxwC adminjs_Box"><svg width="260px" height="260px" viewBox="0 0 260 260" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><circle id="path-1" cx="106" cy="106" r="106"></circle><filter x="-17.0%" y="-17.0%" width="134.0%" height="134.0%" filterUnits="objectBoundingBox" id="filter-2"><feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0.958112299   0 0 0 0 0.910577834   0 0 0 0 0.855913579  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix></filter><circle id="path-3" cx="106" cy="106" r="106"></circle></defs><g id="Main-Templates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group-12" transform="translate(24.000000, 24.000000)"><g id="Oval"><use fill="black" fill-opacity="1" filter="url(#filter-2)" href="#path-1"></use><use fill="#F4E8DB" fill-rule="evenodd" href="#path-1"></use></g><g id="Path-7"><mask id="mask-4" fill="white"><use href="#path-3"></use></mask><use id="Mask" fill="#F4E8DB" href="#path-3"></use><path d="M39.8069626,3.76747066 C45.3021184,115.593145 97.2894125,176.043124 195.768845,185.117407 C294.248278,194.191689 253.575457,215.872553 73.750384,250.16 L-33.92,160.780637 L-25.2907546,24.0909209 L26.5457822,-4.24 L39.8069626,3.76747066 Z" fill="#C8BBB2" mask="url(#mask-4)"></path></g><circle id="Oval" fill="#C8BBB2" cx="80.5" cy="37.5" r="22.5"></circle><circle id="Oval-Copy-3" fill="#C8BBB2" cx="158" cy="66" r="17"></circle><circle id="Oval-Copy-4" stroke="#F4E8DB" stroke-width="3" fill="#C8BBB2" cx="124" cy="166" r="17"></circle><circle id="Oval-Copy-5" stroke="#F4E8DB" stroke-width="1.6875" fill="#C8BBB2" cx="58.5" cy="92.5" r="9.5"></circle><circle id="Oval-Copy" fill="#C8BBB2" cx="157.5" cy="124.5" r="8.5"></circle><circle id="Oval-Copy-6" fill="#C8BBB2" cx="190" cy="96" r="3"></circle><circle id="Oval-Copy-8" fill="#C8BBB2" cx="81" cy="113" r="3"></circle><circle id="Oval-Copy-7" fill="#C8BBB2" cx="126" cy="29" r="3"></circle><circle id="Oval-Copy-2" fill="#C8BBB2" cx="97.5" cy="101.5" r="8.5"></circle></g></g></svg></section><section height="284" class="box__Box-sc-17sbq3p-0 dahvrK adminjs_Box"><div color="white" class="text__Text-sc-wqowgj-0 fiGPVD adminjs_Text"><h2 font-size="h2" class="header__Base-sc-1a72c1w-0 fOcdqA header__H2-sc-1a72c1w-2 tdhTu adminjs_Header adminjs_H2" font-weight="light">Welcome on Board!</h2><div opacity="0.8" class="text__Text-sc-wqowgj-0 cDnRrf adminjs_Text">Now you are one of us! We prepared a few tips for you to start:</div></div></section></section><section width="1,1,1,1024" class="box__Box-sc-17sbq3p-0 diSdEX adminjs_Box"><section width="1,0.5,0.5,0.3333333333333333" class="box__Box-sc-17sbq3p-0 kzQdSy adminjs_Box"><a href="https://adminjs.co/tutorial-passing-resources.html" target="_blank" class="box__Box-sc-17sbq3p-0 default-dashboard__Card-sc-1be5kmo-0 ewULmY ePvrKN adminjs_Box"><div class="text__Text-sc-wqowgj-0 dZRBIO adminjs_Text"><svg width="100" height="70" viewBox="0 0 152 169" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" transform="translate(2.000000, 2.000000)" stroke="#879FFA" stroke-width="3"><path d="M74,117.371134 L74,158.723567 C74,162.037275 71.3137085,164.723567 68,164.723567 C66.9452118,164.723567 65.9090627,164.445504 64.995996,163.917406 L6.67495026,130.185774 L6.67495026,130.185774 C2.54398439,127.796512 1.42108547e-14,123.386278 1.42108547e-14,118.614125 L1.42108547e-14,48.436129 C1.42108547e-14,43.6639756 2.54398439,39.2537412 6.67495026,36.8644799 L67.3072083,1.79609278 C71.4477337,-0.598697595 76.5522663,-0.598697595 80.6927917,1.79609278 L141.32505,36.8644799 C145.456016,39.2537412 148,43.6639756 148,48.436129 L148,118.614125 C148,123.386278 145.456016,127.796512 141.32505,130.185774 L92.2812226,158.551663" id="Path" stroke-linecap="round"></path><path d="M108.882866,90.7418658 C109.714261,87.6976379 110.158112,84.4934359 110.158112,81.185567 C110.158112,61.2008302 93.9572813,45 73.9725445,45 C53.9878077,45 37.7869775,61.2008302 37.7869775,81.185567 C37.7869775,97.3610095 48.4003337,111.05757 63.0430857,115.691287" id="Path" stroke-linecap="round"></path><path d="M73.9725445,117.371134 C77.5908988,117.371134 81.0852119,116.840051 84.3817866,115.851582 C89.8928309,114.19911 94.8512468,111.268362 98.9127122,107.40366" id="Path" stroke-linecap="round"></path><circle id="Oval-Copy" fill-opacity="0.196268575" fill="#879FFA" cx="104.127184" cy="99.2783505" r="9.64948454"></circle><path d="M120.255984,85.4659665 C128.43855,89.8418956 133.002057,93.9015871 132.226834,96.7947568 C131.38817,99.9246931 124.455699,101.112837 113.853361,100.515516" id="Path" stroke-linecap="round"></path><path d="M94.0573111,98.0477535 C86.8513781,96.7649447 79.0016836,95.0204726 70.8507066,92.8364249 C38.6777508,84.2157074 13.9941115,72.0109683 15.718255,65.5763772 C16.4982546,62.6653791 22.5493576,61.4340187 31.9215354,61.7565326" id="Path" stroke-linecap="round"></path><line x1="96.5" y1="22.5" x2="96.5" y2="35.5278784" id="Line-6" stroke-linecap="round"></line><line x1="96.5" y1="22.5" x2="96.5" y2="35.5278784" id="Line-6-Copy" stroke-linecap="round" transform="translate(96.500000, 29.000000) rotate(-270.000000) translate(-96.500000, -29.000000) "></line><line x1="38.5" y1="38.3" x2="38.5" y2="46.1167271" id="Line-6" stroke-linecap="round"></line><line x1="38.4916365" y1="38.2916365" x2="38.4916365" y2="46.1083635" id="Line-6-Copy" stroke-linecap="round" transform="translate(38.491636, 42.200000) rotate(-270.000000) translate(-38.491636, -42.200000) "></line><line x1="98" y1="122.266667" x2="98" y2="129.214868" id="Line-6" stroke-linecap="round"></line><line x1="97.9925658" y1="122.259232" x2="97.9925658" y2="129.207434" id="Line-6-Copy" stroke-linecap="round" transform="translate(97.992566, 125.733333) rotate(-270.000000) translate(-97.992566, -125.733333) "></line><line x1="40.5" y1="122.433333" x2="40.5" y2="133.724161" id="Line-6" stroke-linecap="round"></line><line x1="40.4879193" y1="122.421253" x2="40.4879193" y2="133.712081" id="Line-6-Copy" stroke-linecap="round" transform="translate(40.487919, 128.066667) rotate(-270.000000) translate(-40.487919, -128.066667) "></line></g></g></svg><h5 font-size="xl" class="header__Base-sc-1a72c1w-0 gCcwUC header__H5-sc-1a72c1w-4 hageeE adminjs_Header adminjs_H5" font-weight="normal">Adding Resources</h5><div class="text__Text-sc-wqowgj-0 hNYfux adminjs_Text">How to add new resources to the sidebar</div></div></a></section><section width="1,0.5,0.5,0.3333333333333333" class="box__Box-sc-17sbq3p-0 kzQdSy adminjs_Box"><a href="https://adminjs.co/tutorial-customizing-resources.html" target="_blank" class="box__Box-sc-17sbq3p-0 default-dashboard__Card-sc-1be5kmo-0 ewULmY ePvrKN adminjs_Box"><div class="text__Text-sc-wqowgj-0 dZRBIO adminjs_Text"><svg width="100" height="70" viewBox="0 0 152 169" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" transform="translate(2.000000, 2.000000)" stroke="#879FFA" stroke-width="3"><path d="M74,126.060611 L74,158.723567 C74,162.037275 71.3137085,164.723567 68,164.723567 C66.9452118,164.723567 65.9090627,164.445504 64.995996,163.917406 L6.67495026,130.185774 L6.67495026,130.185774 C2.54398439,127.796512 1.42108547e-14,123.386278 1.42108547e-14,118.614125 L1.42108547e-14,48.436129 C1.42108547e-14,43.6639756 2.54398439,39.2537412 6.67495026,36.8644799 L67.3072083,1.79609278 C71.4477337,-0.598697595 76.5522663,-0.598697595 80.6927917,1.79609278 L141.32505,36.8644799 C145.456016,39.2537412 148,43.6639756 148,48.436129 L148,118.614125 C148,123.386278 145.456016,127.796512 141.32505,130.185774 L92.2812226,158.551663" id="Path-Copy-5" stroke-linecap="round"></path><path d="M105,70.0296545 C105,87.5771932 105,100.077741 105,107.531297 L105,120.263384 C105,121.093743 105,122.339282 105,124 C105,125.104569 104.104569,126 103,126 L73.9676297,126" id="Path" stroke-linecap="round"></path><path d="M54,42.2162102 L54,54 C54,55.1045695 53.1045695,56 52,56 L40.1644979,56" id="Path-Copy-9" fill="#CBD5FD"></path><path d="M58.7460443,126 L42,126 C40.8954305,126 40,125.104569 40,124 L40,55.6898628 L53.6898628,42 C63.9564524,42 71.6563946,42 76.7896894,42" id="Path" stroke-linecap="round"></path><line x1="58.5" y1="89.5" x2="86.8715634" y2="89.5" id="Line-4" stroke-linecap="round"></line><line x1="58.5" y1="104.5" x2="86.8715634" y2="104.5" id="Line-4-Copy" stroke-linecap="round"></line><circle id="Oval" fill="#CBD5FD" cx="92" cy="55" r="20"></circle><polyline id="Path" stroke-linecap="round" stroke-linejoin="round" points="103.727922 49 91 61.7279221 83.8715634 54.5994855"></polyline></g></g></svg><h5 font-size="xl" class="header__Base-sc-1a72c1w-0 gCcwUC header__H5-sc-1a72c1w-4 hageeE adminjs_Header adminjs_H5" font-weight="normal">Customize Resources</h5><div class="text__Text-sc-wqowgj-0 hNYfux adminjs_Text">Defining behavior, adding properties and more...</div></div></a></section><section width="1,0.5,0.5,0.3333333333333333" class="box__Box-sc-17sbq3p-0 kzQdSy adminjs_Box"><a href="https://adminjs.co/tutorial-actions.html" target="_blank" class="box__Box-sc-17sbq3p-0 default-dashboard__Card-sc-1be5kmo-0 ewULmY ePvrKN adminjs_Box"><div class="text__Text-sc-wqowgj-0 dZRBIO adminjs_Text"><svg width="100" height="70" viewBox="0 0 152 169" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" transform="translate(2.000000, 2.000000)" stroke="#879FFA" stroke-width="3"><path d="M74,126.060611 L74,158.723567 C74,162.037275 71.3137085,164.723567 68,164.723567 C66.9452118,164.723567 65.9090627,164.445504 64.995996,163.917406 L6.67495026,130.185774 L6.67495026,130.185774 C2.54398439,127.796512 1.42108547e-14,123.386278 1.42108547e-14,118.614125 L1.42108547e-14,48.436129 C1.42108547e-14,43.6639756 2.54398439,39.2537412 6.67495026,36.8644799 L67.3072083,1.79609278 C71.4477337,-0.598697595 76.5522663,-0.598697595 80.6927917,1.79609278 L141.32505,36.8644799 C145.456016,39.2537412 148,43.6639756 148,48.436129 L148,118.614125 C148,123.386278 145.456016,127.796512 141.32505,130.185774 L92.2812226,158.551663" id="Path-Copy-4" stroke-linecap="round"></path><path d="M106,120.263384 C106,121.093743 106,122.339282 106,124 C106,125.104569 105.104569,126 104,126 L74,126" id="Path" stroke-linecap="round"></path><path d="M55,42.2162102 L55,54 C55,55.1045695 54.1045695,56 53,56 L41.1644979,56" id="Path" fill="#CBD5FD"></path><path d="M56.5220968,126 L43,126 C41.8954305,126 41,125.104569 41,124 L41,55.6898628 L54.6898628,42 L104,42 C105.104569,42 106,42.8954305 106,44 C106,75.6283541 106,96.8054529 106,107.531297" id="Path" stroke-linecap="round"></path><circle id="Oval" fill="#CBD5FD" cx="76" cy="84" r="18"></circle><circle id="Oval-Copy-2" fill="#fff" cx="76" cy="84" r="10"></circle><rect id="Rectangle" fill="#CBD5FD" transform="translate(105.316743, 113.185977) rotate(-315.000000) translate(-105.316743, -113.185977) " x="91.8167434" y="108.685977" width="27" height="9" rx="2"></rect><line x1="88.5" y1="96.5" x2="95.4689509" y2="103.468951" id="Line-3"></line></g></g></svg><h5 font-size="xl" class="header__Base-sc-1a72c1w-0 gCcwUC header__H5-sc-1a72c1w-4 hageeE adminjs_Header adminjs_H5" font-weight="normal">Customize Actions</h5><div class="text__Text-sc-wqowgj-0 hNYfux adminjs_Text">Modifying existing actions and adding new</div></div></a></section><section width="1,0.5,0.5,0.3333333333333333" class="box__Box-sc-17sbq3p-0 kzQdSy adminjs_Box"><a href="https://adminjs.co/tutorial-writing-react-components.html" target="_blank" class="box__Box-sc-17sbq3p-0 default-dashboard__Card-sc-1be5kmo-0 ewULmY ePvrKN adminjs_Box"><div class="text__Text-sc-wqowgj-0 dZRBIO adminjs_Text"><svg width="100" height="70" viewBox="0 0 152 169" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" transform="translate(2.000000, 2.000000)" stroke="#879FFA" stroke-width="3"><path d="M74,102.060611 L74,158.723567 C74,162.037275 71.3137085,164.723567 68,164.723567 C66.9452118,164.723567 65.9090627,164.445504 64.995996,163.917406 L6.67495026,130.185774 L6.67495026,130.185774 C2.54398439,127.796512 1.42108547e-14,123.386278 1.42108547e-14,118.614125 L1.42108547e-14,48.436129 C1.42108547e-14,43.6639756 2.54398439,39.2537412 6.67495026,36.8644799 L67.3072083,1.79609278 C71.4477337,-0.598697595 76.5522663,-0.598697595 80.6927917,1.79609278 L141.32505,36.8644799 C145.456016,39.2537412 148,43.6639756 148,48.436129 L148,118.614125 C148,123.386278 145.456016,127.796512 141.32505,130.185774 L92.2812226,158.551663" id="Path-Copy-3" stroke-linecap="round"></path><path d="M51,49 L119,49 C120.104569,49 121,49.8954305 121,51 L121,92 C121,93.1045695 120.104569,94 119,94 L51,94 L51,94" id="Path" fill="#CBD5FD"></path><line x1="50.5" y1="117.664666" x2="50.5" y2="46" id="Line-2" stroke-linecap="round"></line><path d="M90.239435,81.7782712 C90.0631269,82.1676449 89.8758447,82.5512259 89.6779671,82.9286394 L82.2989672,82.9286393 L81.8937728,82.0669236 L78.1172716,83.9875645 L76.5591632,79.8394848 C76.3961623,79.1332341 76.5739129,78.396551 77.0393222,77.8413752 L79.8721037,74.4622162 C79.8249919,73.8746857 79.8009823,73.2808202 79.8009823,72.6814838 C79.8009823,67.7927344 81.3963573,63.2674855 84.107847,59.5756058 C84.5362871,59.0098353 84.997813,58.7370453 85.4095325,58.6086382 C86.0930507,58.3954624 86.7419904,58.5264664 87.2751427,58.9131117 C90.61381,63.2761567 92.1990177,67.7991512 92.1990177,72.6814838 C92.1990177,73.2808202 92.1750081,73.8746857 92.1278963,74.4622162 L94.9606778,77.8413752 C95.3806819,78.3423882 95.5664172,78.9912204 95.4788634,79.6321076 L94.9309945,83.6424664 L90.239435,81.7782712 Z" id="Path" fill="#fff"></path><path d="M18.4450668,124.33815 C20.3880749,122.496562 22.421736,120.749671 24.5386602,119.104867 L22.349674,115.734124 C21.7480823,114.807754 22.0113671,113.569097 22.9377371,112.967505 L31.3244427,107.521115 C32.2508127,106.919523 33.4894703,107.182808 34.0910619,108.109178 L36.2893205,111.494199 C43.9325843,107.429769 52.2997247,104.546693 61.1471982,103.088517" id="Path" stroke-linecap="round"></path><path d="M74.5,102 C86.2343886,102 97.389559,104.479928 107.469997,108.944271 L109.522759,105.388784 C110.075043,104.432199 111.298224,104.104449 112.254809,104.656733 L125.245191,112.156733 C126.201776,112.709018 126.529526,113.932199 125.977241,114.888784 L123.825459,118.615781 C126.097192,120.345426 128.275354,122.191655 130.351025,124.145546" id="Path" stroke-linecap="round"></path><line x1="82.5" y1="19.5" x2="82.5" y2="32.5278784" id="Line-6" stroke-linecap="round"></line><line x1="82.5" y1="19.5" x2="82.5" y2="32.5278784" id="Line-6-Copy" stroke-linecap="round" transform="translate(82.500000, 26.000000) rotate(-270.000000) translate(-82.500000, -26.000000) "></line><line x1="30.5" y1="40.3" x2="30.5" y2="48.1167271" id="Line-6" stroke-linecap="round"></line><line x1="30.4916365" y1="40.2916365" x2="30.4916365" y2="48.1083635" id="Line-6-Copy" stroke-linecap="round" transform="translate(30.491636, 44.200000) rotate(-270.000000) translate(-30.491636, -44.200000) "></line><line x1="17.5" y1="78.4333333" x2="17.5" y2="89.7241613" id="Line-6" stroke-linecap="round"></line><line x1="17.4879193" y1="78.4212527" x2="17.4879193" y2="89.7120807" id="Line-6-Copy" stroke-linecap="round" transform="translate(17.487919, 84.066667) rotate(-270.000000) translate(-17.487919, -84.066667) "></line></g></g></svg><h5 font-size="xl" class="header__Base-sc-1a72c1w-0 gCcwUC header__H5-sc-1a72c1w-4 hageeE adminjs_Header adminjs_H5" font-weight="normal">Write Components</h5><div class="text__Text-sc-wqowgj-0 hNYfux adminjs_Text">How to modify the Look and Feel of AdminJS</div></div></a></section><section width="1,0.5,0.5,0.3333333333333333" class="box__Box-sc-17sbq3p-0 kzQdSy adminjs_Box"><a href="https://adminjs.co/tutorial-custom-dashboard.html" target="_blank" class="box__Box-sc-17sbq3p-0 default-dashboard__Card-sc-1be5kmo-0 ewULmY ePvrKN adminjs_Box"><div class="text__Text-sc-wqowgj-0 dZRBIO adminjs_Text"><svg width="100" height="70" viewBox="0 0 152 169" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" transform="translate(2.000000, 2.000000)"><path d="M74,124.060611 L74,158.723567 C74,162.037275 71.3137085,164.723567 68,164.723567 C66.9452118,164.723567 65.9090627,164.445504 64.995996,163.917406 L6.67495026,130.185774 L6.67495026,130.185774 C2.54398439,127.796512 1.42108547e-14,123.386278 1.42108547e-14,118.614125 L1.42108547e-14,48.436129 C1.42108547e-14,43.6639756 2.54398439,39.2537412 6.67495026,36.8644799 L67.3072083,1.79609278 C71.4477337,-0.598697595 76.5522663,-0.598697595 80.6927917,1.79609278 L141.32505,36.8644799 C145.456016,39.2537412 148,43.6639756 148,48.436129 L148,118.614125 C148,123.386278 145.456016,127.796512 141.32505,130.185774 L92.2812226,158.551663" id="Path-Copy-6" stroke="#879FFA" stroke-width="3" stroke-linecap="round"></path><path d="M80,75.4190948 C80,70.9185608 80,64.1677599 80,55.166692 L89.166692,46 L122.184615,46 C122.924232,46 123.52381,46.5995776 123.52381,47.3391941 C123.52381,68.5174474 123.52381,82.6975707 123.52381,89.8795641 L123.52381,98.4049324 C123.52381,98.9609384 123.52381,99.7949476 123.52381,100.90696 C123.52381,101.646576 122.924232,102.246154 122.184615,102.246154 C119.775905,102.246154 117.969372,102.246154 116.765016,102.246154 L107.980724,68.9485742 L80,75.4190948 Z" id="Path" fill="#CBD5FD" transform="translate(101.761905, 74.123077) rotate(-345.000000) translate(-101.761905, -74.123077) "></path><path d="M80,75.4190948 C80,70.9185608 80,64.1677599 80,55.166692 L89.166692,46 L122.184615,46 C122.924232,46 123.52381,46.5995776 123.52381,47.3391941 C123.52381,68.5174474 123.52381,82.6975707 123.52381,89.8795641 L123.52381,98.4049324 L123.52381,98.4049324 C123.52381,98.9609384 123.52381,99.7949476 123.52381,100.90696 C123.52381,101.646576 122.924232,102.246154 122.184615,102.246154 C119.775905,102.246154 117.969372,102.246154 116.765016,102.246154" id="Path-Copy-7" stroke="#879FFA" stroke-width="3" transform="translate(101.761905, 74.123077) rotate(-345.000000) translate(-101.761905, -74.123077) "></path><path d="M96.001211,42.535856 L96.001211,50.4262472 C96.001211,51.1658637 95.4016334,51.7654413 94.6620169,51.7654413 L86.7369994,51.7654413" id="Path-Copy-10" stroke="#879FFA" stroke-width="3" transform="translate(91.369105, 47.150649) rotate(-345.000000) translate(-91.369105, -47.150649) "></path><path d="M48.907368,38.345876 L48.907368,46.2362671 C48.907368,46.9758836 48.3077904,47.5754613 47.5681739,47.5754613 L39.6431564,47.5754613" id="Path-Copy-10" stroke="#879FFA" stroke-width="3" fill="#CBD5FD" transform="translate(44.275262, 42.960669) rotate(-15.000000) translate(-44.275262, -42.960669) "></path><path d="M40.6569874,54.4287231 C40.6569874,51.8308869 40.6569874,47.9341327 40.6569874,42.7384605 L49.8236794,33.5717685 L82.8416028,33.5717685 C83.5812193,33.5717685 84.1807969,34.1713461 84.1807969,34.9109626 C84.1807969,43.0635825 84.1807969,50.179161 84.1807969,56.257698" id="Path" stroke="#879FFA" stroke-width="3" transform="translate(62.418892, 44.914733) rotate(-15.000000) translate(-62.418892, -44.914733) "></path><path d="M53.634268,124 L34,124 C32.8954305,124 32,123.104569 32,122 L32,62 C32,60.8954305 32.8954305,60 34,60 L53.5584816,60 C54.4193424,60 55.1836201,60.5508602 55.4558482,61.3675445 L58.3333333,70 L107,70 C108.104569,70 109,70.8954305 109,72 L109,122 C109,123.104569 108.104569,124 107,124 L74,124" id="Path" stroke="#879FFA" stroke-width="3" stroke-linecap="round"></path><line x1="32" y1="80.4611735" x2="96.5731" y2="80.4611735" id="Line-7" stroke="#879FFA" stroke-width="3" stroke-linecap="round"></line></g></g></svg><h5 font-size="xl" class="header__Base-sc-1a72c1w-0 gCcwUC header__H5-sc-1a72c1w-4 hageeE adminjs_Header adminjs_H5" font-weight="normal">Custom Dashboard</h5><div class="text__Text-sc-wqowgj-0 hNYfux adminjs_Text">How to modify this view and add new Pages on the sidebar</div></div></a></section><section width="1,0.5,0.5,0.3333333333333333" class="box__Box-sc-17sbq3p-0 kzQdSy adminjs_Box"><a href="https://adminjs.co/tutorial-rbac.html" target="_blank" class="box__Box-sc-17sbq3p-0 default-dashboard__Card-sc-1be5kmo-0 ewULmY ePvrKN adminjs_Box"><div class="text__Text-sc-wqowgj-0 dZRBIO adminjs_Text"><svg width="100" height="70" viewBox="0 0 152 169" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" transform="translate(2.000000, 2.000000)" stroke="#879FFA" stroke-width="3"><path d="M74,123.060611 L74,158.723567 C74,162.037275 71.3137085,164.723567 68,164.723567 C66.9452118,164.723567 65.9090627,164.445504 64.995996,163.917406 L6.67495026,130.185774 L6.67495026,130.185774 C2.54398439,127.796512 1.42108547e-14,123.386278 1.42108547e-14,118.614125 L1.42108547e-14,48.436129 C1.42108547e-14,43.6639756 2.54398439,39.2537412 6.67495026,36.8644799 L67.3072083,1.79609278 C71.4477337,-0.598697595 76.5522663,-0.598697595 80.6927917,1.79609278 L141.32505,36.8644799 C145.456016,39.2537412 148,43.6639756 148,48.436129 L148,118.614125 C148,123.386278 145.456016,127.796512 141.32505,130.185774 L92.2812226,158.551663" id="Path-Copy-2" stroke-linecap="round"></path><path d="M104.072464,59.4347826 L107.42029,59.4347826 C110.501879,59.4347826 113,61.9329039 113,65.0144928 L113,72.826087 C113,75.9076758 110.501879,78.4057971 107.42029,78.4057971 L104.072464,78.4057971" id="Path" fill="#CBD5FD"></path><path d="M36,59.4347826 L39.3478261,59.4347826 C42.4294149,59.4347826 44.9275362,61.9329039 44.9275362,65.0144928 L44.9275362,72.826087 C44.9275362,75.9076758 42.4294149,78.4057971 39.3478261,78.4057971 L36,78.4057971" id="Path-Copy-8" fill="#CBD5FD" transform="translate(40.463768, 68.920290) scale(-1, 1) translate(-40.463768, -68.920290) "></path><path d="M73.942029,36 L75.057971,36 C91.6985507,36 105.188406,49.4898551 105.188406,66.1304348 L105.188406,74.2608696 C105.188406,86.4111341 95.3386703,96.2608696 83.1884058,96.2608696 L65.8115942,96.2608696 C53.6613297,96.2608696 43.8115942,86.4111341 43.8115942,74.2608696 L43.8115942,66.1304348 C43.8115942,49.4898551 57.3014493,36 73.942029,36 Z" id="Rectangle"></path><path d="M61.6231884,54.9710145 L87.3768116,54.9710145 C92.8996591,54.9710145 97.3768116,59.448167 97.3768116,64.9710145 L97.3768116,71.1521739 C97.3768116,80.0887815 90.1322598,87.3333333 81.1956522,87.3333333 L67.8043478,87.3333333 C58.8677402,87.3333333 51.6231884,80.0887815 51.6231884,71.1521739 L51.6231884,64.9710145 C51.6231884,59.448167 56.1003409,54.9710145 61.6231884,54.9710145 Z" id="Rectangle" fill="#CBD5FD"></path><path d="M98.1625549,96.4072839 C104.039008,97.3212203 108.536232,102.403535 108.536232,108.536232 L108.536232,118.134734 C108.536232,119.211784 107.767028,120.135188 106.707715,120.329844 C106.055061,120.449774 105.513749,120.546295 105.083779,120.619408 C95.9922338,122.165353 85.5737028,123.043478 74.5,123.043478" id="Path" stroke-linecap="round"></path><path d="M63.9958478,122.775649 C56.839568,122.406752 50.0823079,121.667204 43.9319499,120.622082 C43.4981804,120.548372 42.951644,120.450947 42.2923407,120.329807 C41.2329855,120.135184 40.4637681,119.211754 40.4637681,118.134669 L40.4637681,108.536232 C40.4637681,102.446055 44.8988464,97.391746 50.715414,96.426894" id="Path" stroke-linecap="round"></path><path d="M100.724638,87.6057924 C100.724638,97.4668767 92.7306494,105.188406 82.8695652,105.188406 L66.1304348,105.188406 C56.2693506,105.188406 48.2753623,97.4668767 48.2753623,87.6057924" id="Path" stroke-linecap="round"></path></g></g></svg><h5 font-size="xl" class="header__Base-sc-1a72c1w-0 gCcwUC header__H5-sc-1a72c1w-4 hageeE adminjs_Header adminjs_H5" font-weight="normal">Role-Based Access Control</h5><div class="text__Text-sc-wqowgj-0 hNYfux adminjs_Text">Create user roles and permissions in AdminJS</div></div></a></section><section width="1,1,0.5" class="box__Box-sc-17sbq3p-0 bbIVde adminjs_Box"><a href="https://join.slack.com/t/adminbro/shared_invite/zt-djsqxxpz-_YCS8UMtQ9Ade6DPuLR7Zw" target="_blank" class="box__Box-sc-17sbq3p-0 default-dashboard__Card-sc-1be5kmo-0 eYnyiO kgVLgX adminjs_Box"><section class="box__Box-sc-17sbq3p-0 cOPERV adminjs_Box"><svg width="72px" height="72px" viewBox="70 70 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg"><g><g><path d="M99.4,151.2c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h12.9V151.2z" style="fill: rgb(224, 30, 90);"></path><path d="M105.9,151.2c0-7.1,5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v32.3c0,7.1-5.8,12.9-12.9,12.9s-12.9-5.8-12.9-12.9V151.2z" style="fill: rgb(224, 30, 90);"></path></g><g><path d="M118.8,99.4c-7.1,0-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v12.9H118.8z" style="fill: rgb(54, 197, 240);"></path><path d="M118.8,105.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9H86.5c-7.1,0-12.9-5.8-12.9-12.9s5.8-12.9,12.9-12.9H118.8z" style="fill: rgb(54, 197, 240);"></path></g><g><path d="M170.6,118.8c0-7.1,5.8-12.9,12.9-12.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9h-12.9V118.8z" style="fill: rgb(46, 182, 125);"></path><path d="M164.1,118.8c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9V86.5c0-7.1,5.8-12.9,12.9-12.9c7.1,0,12.9,5.8,12.9,12.9V118.8z" style="fill: rgb(46, 182, 125);"></path></g><g><path d="M151.2,170.6c7.1,0,12.9,5.8,12.9,12.9c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9v-12.9H151.2z" style="fill: rgb(236, 178, 46);"></path><path d="M151.2,164.1c-7.1,0-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h32.3c7.1,0,12.9,5.8,12.9,12.9c0,7.1-5.8,12.9-12.9,12.9H151.2z" style="fill: rgb(236, 178, 46);"></path></g></g></svg></section><section class="box__Box-sc-17sbq3p-0 jyjGBM adminjs_Box"><h4 font-size="h4" class="header__Base-sc-1a72c1w-0 gfezNg header__H4-sc-1a72c1w-3 crueSy adminjs_Header adminjs_H4" font-weight="light">Join the slack community</h4><div class="text__Text-sc-wqowgj-0 hNYfux adminjs_Text">Talk with the creators of AdminJS and other AdminJS users</div></section></a></section><section width="1,1,0.5" class="box__Box-sc-17sbq3p-0 bbIVde adminjs_Box"><a href="https://github.com/SoftwareBrothers/adminjs/issues" target="_blank" class="box__Box-sc-17sbq3p-0 default-dashboard__Card-sc-1be5kmo-0 eYnyiO kgVLgX adminjs_Box"><section class="box__Box-sc-17sbq3p-0 cOPERV adminjs_Box"><svg width="72px" height="71px" viewBox="0 0 72 71" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Atoms/Logotype/Github" transform="translate(0.000000, 1.000000)" fill="#1C1C38" fill-rule="nonzero"><path d="M67.1013759,17.4238423 C63.8854852,11.9137922 59.5233349,7.55147781 54.0137768,4.33591517 C48.5033986,1.12018851 42.4877084,-0.487264789 35.9624419,-0.487264789 C29.4379954,-0.487264789 23.4203371,1.12068054 17.9111071,4.33591517 C12.4010569,7.5513138 8.03907062,11.9137922 4.82317995,17.4238423 C1.60778132,22.9337284 -4.26325641e-14,28.9505666 -4.26325641e-14,35.4741931 C-4.26325641e-14,43.3105484 2.28628702,50.3571999 6.86000911,56.6159516 C11.4332392,62.8751953 17.3411754,67.206348 24.5833257,69.6099015 C25.4263326,69.7663662 26.0503872,69.6563161 26.4561458,69.2825393 C26.8620683,68.9082705 27.0647836,68.4395325 27.0647836,67.8782933 C27.0647836,67.7846441 27.0567472,66.9421293 27.0411663,65.3497648 C27.0250934,63.7574004 27.017549,62.3682432 27.017549,61.1829493 L25.9405011,61.3692637 C25.253795,61.4950587 24.3874989,61.5483616 23.3416128,61.5332728 C22.2962187,61.518676 21.2109704,61.4091179 20.087344,61.2054186 C18.9632255,61.0035234 17.9176674,60.5352774 16.9498497,59.8016646 C15.9825239,59.0680518 15.2958178,58.1077785 14.8898952,56.9223206 L14.4216492,55.8447808 C14.1095399,55.1274049 13.6181686,54.3304846 12.9468793,53.4569721 C12.27559,52.5826395 11.5967563,51.9899106 10.9100501,51.6778013 L10.5821959,51.4431042 C10.3637358,51.2871316 10.1610205,51.0990131 9.97355809,50.880717 C9.78625968,50.6624209 9.64603189,50.4439607 9.55238269,50.2251726 C9.45856948,50.0062204 9.53630979,49.8266304 9.78642369,49.6857466 C10.0365376,49.5448628 10.4885467,49.476471 11.1444191,49.476471 L12.0805831,49.6163707 C12.7049658,49.7415097 13.4772847,50.1152865 14.3985239,50.7399972 C15.3192711,51.3642158 16.0761731,52.1757329 16.6693941,53.1742204 C17.387754,54.4544755 18.2532301,55.4300017 19.2682825,56.101291 C20.2825148,56.7725803 21.3051116,57.1076509 22.3350888,57.1076509 C23.3650661,57.1076509 24.2546515,57.0295826 25.0041731,56.874266 C25.7528747,56.7181293 26.4553257,56.4834322 27.1111982,56.1714869 C27.3921458,54.0790587 28.1570843,52.4716054 29.4053576,51.3479789 C27.6261868,51.1610086 26.0266059,50.8794049 24.605795,50.5049721 C23.1858041,50.1300473 21.7184146,49.5215735 20.2046105,48.6779106 C18.6899863,47.8353958 17.4335125,46.7891817 16.434861,45.5410723 C15.4360456,44.292307 14.616328,42.6528719 13.9768565,40.6242432 C13.3370569,38.5947944 13.0170752,36.2537284 13.0170752,33.600389 C13.0170752,29.8224391 14.2504237,26.6075325 16.7166287,23.9538651 C15.5613485,21.1135553 15.6704146,17.9294824 17.0441549,14.4019744 C17.9494852,14.1206988 19.2920638,14.3317785 21.0712346,15.0339015 C22.8507335,15.7363525 24.1536219,16.338102 24.9812118,16.8370177 C25.8088018,17.3357694 26.4718907,17.7584209 26.9714624,18.1011999 C29.8752437,17.2898468 32.8718542,16.8840883 35.9621139,16.8840883 C39.0523736,16.8840883 42.0496401,17.2898468 44.9535854,18.1011999 L46.7329203,16.9779015 C47.9497039,16.2283799 49.3865877,15.5415097 51.0401276,14.917127 C52.6946515,14.2930723 53.9598178,14.1211908 54.8343144,14.4024664 C56.2385604,17.9301384 56.3636993,21.1140473 55.2080911,23.9543571 C57.6741321,26.6080245 58.9079727,29.8237512 58.9079727,33.600881 C58.9079727,36.2542204 58.5868428,38.6026669 57.9480273,40.6476965 C57.3083918,42.6930541 56.4816219,44.3308491 55.4673895,45.5645256 C54.4520091,46.7980382 53.1874989,47.8360518 51.6736948,48.6784026 C50.1595626,49.5214095 48.6916811,50.1298833 47.2716902,50.5048081 C45.8510433,50.8797329 44.2514624,51.1615006 42.4722916,51.348799 C44.0949977,52.753045 44.9065148,54.9696281 44.9065148,57.9975644 L44.9065148,67.8769812 C44.9065148,68.4382204 45.1016856,68.9067944 45.4923554,69.2812272 C45.882533,69.655004 46.4987153,69.7650541 47.3417221,69.6084254 C54.5848565,67.2051999 60.4927927,62.8738833 65.0658588,56.6146395 C69.6384328,50.3558878 71.9255399,43.3092364 71.9255399,35.472881 C71.9238998,28.9500746 70.3152984,22.9337284 67.1013759,17.4238423 Z" id="Path"></path></g></g></svg></section><section class="box__Box-sc-17sbq3p-0 jyjGBM adminjs_Box"><h4 font-size="h4" class="header__Base-sc-1a72c1w-0 gfezNg header__H4-sc-1a72c1w-3 crueSy adminjs_Header adminjs_H4" font-weight="light">Found a Bug? need improvement?</h4><div class="text__Text-sc-wqowgj-0 hNYfux adminjs_Text">Raise an issue on our GitHub repo</div></section></a></section><section width="1" class="box__Box-sc-17sbq3p-0 jbGMnn adminjs_Box"><div class="text__Text-sc-wqowgj-0 dZRBIO adminjs_Text"><svg width="113px" height="113px" viewBox="0 0 113 113" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-18.8%" y="-13.4%" width="137.6%" height="137.6%" filterUnits="objectBoundingBox" id="a"><feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0.301960784 0 0 0 0 0.439215686 0 0 0 0 0.921568627 0 0 0 0.402289117 0" in="shadowBlurOuter1"></feColorMatrix></filter><rect id="b" x="0" y="0" width="93" height="93" rx="20"></rect></defs><g fill="none" fill-rule="evenodd"><g transform="translate(10 5)"><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#4D70EB" xlink:href="#b"></use></g><path d="M56.5 28 83 74H68.932l-3.282-5.698a5.632 5.632 0 0 0-4.63-2.815l-.25-.006h-8.54a5.632 5.632 0 0 0-4.88 2.82L44.066 74H30l26.5-46zm0 20.444c-3.114 0-5.638 2.543-5.638 5.68 0 3.136 2.524 5.678 5.638 5.678s5.638-2.542 5.638-5.679c0-3.136-2.524-5.679-5.638-5.679z" fill="#FFF"></path></g></svg><h4 font-size="h4" class="header__Base-sc-1a72c1w-0 gfezNg header__H4-sc-1a72c1w-3 crueSy adminjs_Header adminjs_H4" font-weight="light">Need more advanced solutions?</h4><div class="text__Text-sc-wqowgj-0 hNYfux adminjs_Text">We are here to provide you a beautiful UX/UI design and tailor made software based (not only) on AdminJS</div><div class="text__Text-sc-wqowgj-0 eXkXhl adminjs_Text"><a href="https://share.hsforms.com/1IedvmEz6RH2orhcL6g2UHA8oc5a" target="_blank" class="button__Button-sc-1q77kr1-0 hLlgFs adminjs_Button">Contact Us</a></div></div></section></section></section></section></section></div><noscript></noscript><script type="text/javascript" id="" src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
-<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","4476233162493826");fbq("track","PageView");</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4476233162493826&amp;ev=PageView&amp;noscript=1"></noscript>
-
-<script type="text/javascript" id="">window.OneSignal=window.OneSignal||[];OneSignal.push(function(){OneSignal.init({appId:"7488cd7f-5eba-4566-951f-8c69c4042a73"})});</script><iframe id="_hjSafeContext_72427186" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="about:blank" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><script type="text/javascript" id="">fbq("track","ProductDemo");</script><script type="text/javascript" id="">rdt("track","ViewContent");</script></body><div id="vimeo-record-extension"></div></html>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+          <a class="navbar-brand brand-logo" href="index.html">
+            <img src="assets/images/logo.svg" alt="logo" /> </a>
+          <a class="navbar-brand brand-logo-mini" href="index.html">
+            <img src="assets/images/logo-mini.svg" alt="logo" /> </a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center">
+          <ul class="navbar-nav">
+            <li class="nav-item font-weight-semibold d-none d-lg-block">Help : samandwillprogramming@gmail.com</li>
+            <li class="nav-item dropdown language-dropdown">
+              <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" id="LanguageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <div class="d-inline-flex mr-0 mr-md-3">
+                  <div class="flag-icon-holder">
+                    <i class="flag-icon flag-icon-gb"></i>
+                  </div>
+                </div>
+                <span class="profile-text font-weight-medium d-none d-md-block">English</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-left navbar-dropdown py-2" aria-labelledby="LanguageDropdown">
+                <a class="dropdown-item">
+                  <div class="flag-icon-holder">
+                    <i class="flag-icon flag-icon-gb"></i>
+                  </div>English
+                </a>
+                <a class="dropdown-item">
+                  <div class="flag-icon-holder">
+                    <i class="flag-icon flag-icon-fr"></i>
+                  </div>French
+                </a>
+                <a class="dropdown-item">
+                  <div class="flag-icon-holder">
+                    <i class="flag-icon flag-icon-ae"></i>
+                  </div>Arabic
+                </a>
+                <a class="dropdown-item">
+                  <div class="flag-icon-holder">
+                    <i class="flag-icon flag-icon-de"></i>
+                  </div>German
+                </a>
+              </div>
+            </li>
+          </ul>
+          <form class="ml-auto search-form d-none d-md-block" action="#">
+            <div class="form-group">
+              <input type="search" class="form-control" placeholder="Search Here">
+            </div>
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count">7</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+                <a class="dropdown-item py-3">
+                  <p class="mb-0 font-weight-medium float-left">You have 7 unread emails </p>
+                  <span class="badge badge-pill badge-primary float-right">View all</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="assets/images/faces/face10.jpg" alt="image" class="img-sm profile-pic"> </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis font-weight-medium text-dark">Sam Gabert </p>
+                    <p class="font-weight-light small-text"> updated Lily </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic"> </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis font-weight-medium text-dark">Josh Manley </p>
+                    <p class="font-weight-light small-text"> I fixed server 5 now should be ok. </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="assets/images/faces/face1.jpg" alt="image" class="img-sm profile-pic"> </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis font-weight-medium text-dark">Sam Gabert </p>
+                    <p class="font-weight-light small-text"> i updated the jira thing </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-toggle="dropdown">
+                <i class="mdi mdi-email-outline"></i>
+                <span class="count bg-success">3</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+                <a class="dropdown-item py-3 border-bottom">
+                  <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                  <span class="badge badge-pill badge-primary float-right">View all</span>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-alert m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal text-dark mb-1">Application Error</h6>
+                    <p class="font-weight-light small-text mb-0"> 7/4/23 </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-settings m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal text-dark mb-1">Settings</h6>
+                    <p class="font-weight-light small-text mb-0"> Private message </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal text-dark mb-1">New user registration</h6>
+                    <p class="font-weight-light small-text mb-0"> 1/4/23 </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
+              <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <img class="img-xs rounded-circle" src="https://www.scotsman.com/webimg/b25lY21zOmRmYmExYzE4LTZhY2ItNDBkZS1iMTU1LWY4YTVlZWNmYTdkYzowOTcxZDZlOC00MDc1LTQzYzItOWEyOC00YjNlNzFiY2Y1YzI=.jpg?width=1200&enable=upscale" alt="Profile image"> </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                <div class="dropdown-header text-center">
+                  <img class="img-md rounded-circle" src="https://www.scotsman.com/webimg/b25lY21zOmRmYmExYzE4LTZhY2ItNDBkZS1iMTU1LWY4YTVlZWNmYTdkYzowOTcxZDZlOC00MDc1LTQzYzItOWEyOC00YjNlNzFiY2Y1YzI=.jpg?width=1200&enable=upscale" alt="Profile image">
+                  <p class="mb-1 mt-3 font-weight-semibold">Will Graves</p>
+                  <p class="font-weight-light text-muted mb-0">willgraves@jenny.hubot</p>
+                </div>
+                <a class="dropdown-item">My Profile <span class="badge badge-pill badge-danger">1</span><i class="dropdown-item-icon ti-dashboard"></i></a>
+                <a class="dropdown-item">Messages<i class="dropdown-item-icon ti-comment-alt"></i></a>
+                <a class="dropdown-item">Activity<i class="dropdown-item-icon ti-location-arrow"></i></a>
+                <a class="dropdown-item">FAQ<i class="dropdown-item-icon ti-help-alt"></i></a>
+                <a class="dropdown-item">Sign Out<i class="dropdown-item-icon ti-power-off"></i></a>
+              </div>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="profile-image">
+                  <img class="img-xs rounded-circle" src="https://www.scotsman.com/webimg/b25lY21zOmRmYmExYzE4LTZhY2ItNDBkZS1iMTU1LWY4YTVlZWNmYTdkYzowOTcxZDZlOC00MDc1LTQzYzItOWEyOC00YjNlNzFiY2Y1YzI=.jpg?width=1200&enable=upscale" alt="profile image">
+                  <div class="dot-indicator bg-success"></div>
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name">Will Graves</p>
+                  <p class="designation">Admin user</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item nav-category">Main Menu</li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="menu-icon typcn typcn-document-text"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="menu-icon typcn typcn-coffee"></i>
+                <span class="menu-title">Basic UI Elements</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/typography.html">Typography</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/forms/basic_elements.html">
+                <i class="menu-icon typcn typcn-shopping-bag"></i>
+                <span class="menu-title">Form elements</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/charts/chartjs.html">
+                <i class="menu-icon typcn typcn-th-large-outline"></i>
+                <span class="menu-title">Charts</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/tables/basic-table.html">
+                <i class="menu-icon typcn typcn-bell"></i>
+                <span class="menu-title">Tables</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/icons/font-awesome.html">
+                <i class="menu-icon typcn typcn-user-outline"></i>
+                <span class="menu-title">Icons</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                <i class="menu-icon typcn typcn-document-add"></i>
+                <span class="menu-title">User Pages</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/login.html"> Login </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/register.html"> Register </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-404.html"> 404 </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-500.html"> 500 </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <!-- Page Title Header Starts-->
+            <div class="row page-title-header">
+              <div class="col-12">
+                <div class="page-header">
+                  <h4 class="page-title">Dashboard</h4>
+                  <div class="quick-link-wrapper w-100 d-md-flex flex-md-wrap">
+                    <ul class="quick-links">
+                      <li><a href="#">ICE Market data</a></li>
+                      <li><a href="#">Own analysis</a></li>
+                      <li><a href="#">Historic market data</a></li>
+                    </ul>
+                    <ul class="quick-links ml-auto">
+                      <li><a href="#">Settings</a></li>
+                      <li><a href="#">Analytics</a></li>
+                      <li><a href="#">Watchlist</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="page-header-toolbar">
+                  <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-left"></i></button>
+                    <button type="button" class="btn btn-secondary">03/02/2019 - 20/08/2019</button>
+                    <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-right"></i></button>
+                  </div>
+                  <div class="filter-wrapper">
+                    <div class="dropdown toolbar-item">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownsorting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Day</button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownsorting">
+                        <a class="dropdown-item" href="#">Last Day</a>
+                        <a class="dropdown-item" href="#">Last Month</a>
+                        <a class="dropdown-item" href="#">Last Year</a>
+                      </div>
+                    </div>
+                    <a href="#" class="advanced-link toolbar-item">Advanced Options</a>
+                  </div>
+                  <div class="sort-wrapper">
+                    <button type="button" class="btn btn-primary toolbar-item">New</button>
+                    <div class="dropdown ml-lg-auto ml-3 toolbar-item">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownexport" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export</button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownexport">
+                        <a class="dropdown-item" href="#">Export as PDF</a>
+                        <a class="dropdown-item" href="#">Export as DOCX</a>
+                        <a class="dropdown-item" href="#">Export as CDR</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Page Title Header Ends-->
+            <div class="row">
+              <div class="col-md-12 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-6">
+                        <div class="d-flex">
+                          <div class="wrapper">
+                            <h3 class="mb-0 font-weight-semibold">32,451</h3>
+                            <h5 class="mb-0 font-weight-medium text-primary">Visits</h5>
+                            <p class="mb-0 text-muted">+14.00(+0.50%)</p>
+                          </div>
+                          <div class="wrapper my-auto ml-auto ml-lg-4">
+                            <canvas height="50" width="100" id="stats-line-graph-1"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
+                        <div class="d-flex">
+                          <div class="wrapper">
+                            <h3 class="mb-0 font-weight-semibold">15,236</h3>
+                            <h5 class="mb-0 font-weight-medium text-primary">Impressions</h5>
+                            <p class="mb-0 text-muted">+138.97(+0.54%)</p>
+                          </div>
+                          <div class="wrapper my-auto ml-auto ml-lg-4">
+                            <canvas height="50" width="100" id="stats-line-graph-2"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
+                        <div class="d-flex">
+                          <div class="wrapper">
+                            <h3 class="mb-0 font-weight-semibold">7,688</h3>
+                            <h5 class="mb-0 font-weight-medium text-primary">Conversation</h5>
+                            <p class="mb-0 text-muted">+57.62(+0.76%)</p>
+                          </div>
+                          <div class="wrapper my-auto ml-auto ml-lg-4">
+                            <canvas height="50" width="100" id="stats-line-graph-3"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
+                        <div class="d-flex">
+                          <div class="wrapper">
+                            <h3 class="mb-0 font-weight-semibold">1,553</h3>
+                            <h5 class="mb-0 font-weight-medium text-primary">Downloads</h5>
+                            <p class="mb-0 text-muted">+138.97(+0.54%)</p>
+                          </div>
+                          <div class="wrapper my-auto ml-auto ml-lg-4">
+                            <canvas height="50" width="100" id="stats-line-graph-4"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title mb-0">Sales Statistics Overview</h4>
+                    <div class="d-flex flex-column flex-lg-row">
+                      <p>Lorem ipsum is placeholder text commonly used</p>
+                      <ul class="nav nav-tabs sales-mini-tabs ml-lg-auto mb-4 mb-md-0" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="sales-statistics_switch_1" data-toggle="tab" role="tab" aria-selected="true">1D</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="sales-statistics_switch_2" data-toggle="tab" role="tab" aria-selected="false">5D</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="sales-statistics_switch_3" data-toggle="tab" role="tab" aria-selected="false">1M</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="sales-statistics_switch_4" data-toggle="tab" role="tab" aria-selected="false">1Y</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row">
+                      <div class="data-wrapper d-flex mt-2 mt-lg-0">
+                        <div class="wrapper pr-5">
+                          <h5 class="mb-0">Total Cost</h5>
+                          <div class="d-flex align-items-center">
+                            <h4 class="font-weight-semibold mb-0">15,263</h4>
+                            <small class="ml-2 text-gray d-none d-lg-block"><b>89.5%</b> of 20,000 Total</small>
+                          </div>
+                        </div>
+                        <div class="wrapper">
+                          <h5 class="mb-0">Total Revenue</h5>
+                          <div class="d-flex align-items-center">
+                            <h4 class="font-weight-semibold mb-0">$753,098</h4>
+                            <small class="ml-2 text-gray d-none d-lg-block"><b>10.5%</b> of 20,000 Total</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ml-lg-auto" id="sales-statistics-legend"></div>
+                    </div>
+                    <canvas class="mt-5" height="120" id="sales-statistics-overview"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body d-flex flex-column">
+                    <div class="wrapper">
+                      <h4 class="card-title mb-0">Net Profit Margin</h4>
+                      <p>Started collecting data from February 2019</p>
+                      <div class="mb-4" id="net-profit-legend"></div>
+                    </div>
+                    <canvas class="my-auto mx-auto" height="250" id="net-profit"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-6 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body pb-0">
+                        <div class="d-flex justify-content-between">
+                          <h4 class="card-title mb-0">Total Revenue</h4>
+                          <p class="font-weight-semibold mb-0">+1.37%</p>
+                        </div>
+                        <h3 class="font-weight-medium mb-4">184.42K</h3>
+                      </div>
+                      <canvas class="mt-n4" height="90" id="total-revenue"></canva>
+                    </div>
+                  </div>
+                  <div class="col-md-6 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body pb-0">
+                        <div class="d-flex justify-content-between">
+                          <h4 class="card-title mb-0">Transaction</h4>
+                          <p class="font-weight-semibold mb-0">-2.87%</p>
+                        </div>
+                        <h3 class="font-weight-medium">147.7K</h3>
+                      </div>
+                      <canvas class="mt-n3" height="90" id="total-transaction"></canva>
+                    </div>
+                  </div>
+                  <div class="col-md-12 grid-margin">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title mb-0">Market Overview</h4>
+                        <div class="d-flex align-items-center justify-content-between w-100">
+                          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dateSorter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">This Month</button>
+                            <div class="dropdown-menu" aria-labelledby="dateSorter">
+                              <div class="dropdown-item" id="market-overview_1">Daily</div>
+                              <div class="dropdown-item" id="market-overview_2">Weekly</div>
+                              <div class="dropdown-item" id="market-overview_3">Monthly</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-end">
+                          <h3 class="mb-0 font-weight-semibold">$36,2531.00</h3>
+                          <p class="mb-0 font-weight-medium mr-2 ml-2 mb-1">USD</p>
+                          <p class="mb-0 text-success font-weight-semibold mb-1">(+1.37%)</p>
+                        </div>
+                        <canvas class="mt-4" height="100" id="market-overview-chart"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 grid-margin">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                          <h4 class="card-title mb-0">Invoice</h4>
+                          <a href="#"><small>Show All</small></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quod cupiditate esse fuga</p>
+                        <div class="table-responsive">
+                          <table class="table table-striped table-hover">
+                            <thead>
+                              <tr>
+                                <th>Invoice ID</th>
+                                <th>Customer</th>
+                                <th>Status</th>
+                                <th>Due Date</th>
+                                <th>Amount</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>INV-87239</td>
+                                <td>Viola Ford</td>
+                                <td>Paid</td>
+                                <td>20 Jan 2019</td>
+                                <td>$755</td>
+                              </tr>
+                              <tr>
+                                <td>INV-87239</td>
+                                <td>Dylan Waters</td>
+                                <td>Unpaid</td>
+                                <td>23 Feb 2019</td>
+                                <td>$800</td>
+                              </tr>
+                              <tr>
+                                <td>INV-87239</td>
+                                <td>Louis Poole</td>
+                                <td>Unpaid</td>
+                                <td>25 Mar 2019</td>
+                                <td>$463</td>
+                              </tr>
+                              <tr>
+                                <td>INV-87239</td>
+                                <td>Vera Howell</td>
+                                <td>Paid</td>
+                                <td>27 Mar 2019</td>
+                                <td>$235</td>
+                              </tr>
+                              <tr>
+                                <td>INV-87239</td>
+                                <td>Allie Goodman</td>
+                                <td>Unpaid</td>
+                                <td>1 Apr 2019</td>
+                                <td>$657</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="d-flex align-items-center pb-2">
+                              <div class="dot-indicator bg-danger mr-2"></div>
+                              <p class="mb-0">Total Sales</p>
+                            </div>
+                            <h4 class="font-weight-semibold">$7,590</h4>
+                            <div class="progress progress-md">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="78"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="d-flex align-items-center pb-2">
+                              <div class="dot-indicator bg-success mr-2"></div>
+                              <p class="mb-0">Active Users</p>
+                            </div>
+                            <h4 class="font-weight-semibold">$5,460</h4>
+                            <div class="progress progress-md">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="45"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 grid-margin stretch-card average-price-card">
+                    <div class="card text-white">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between pb-2 align-items-center">
+                          <h2 class="font-weight-semibold mb-0">4,624</h2>
+                          <div class="icon-holder">
+                            <i class="mdi mdi-briefcase-outline"></i>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <h5 class="font-weight-semibold mb-0">Average Price</h5>
+                          <p class="text-white mb-0">Since last month</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-12 grid-margin">
+                    <div class="card">
+                      <div class="card-body">
+                        <h1 class="card-title mb-4">Website Audience Metrics</h1>
+                        <div class="row">
+                          <div class="col-5 col-md-5">
+                            <div class="wrapper border-bottom mb-2 pb-2">
+                              <h4 class="font-weight-semibold mb-0">523,200</h4>
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0">Page Views</p>
+                                <div class="dot-indicator bg-secondary ml-auto"></div>
+                              </div>
+                            </div>
+                            <div class="wrapper">
+                              <h4 class="font-weight-semibold mb-0">753,098</h4>
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0">Bounce Rate</p>
+                                <div class="dot-indicator bg-primary ml-auto"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-5 col-md-7 d-flex pl-4">
+                            <div class="ml-auto">
+                              <canvas height="100" id="realtime-statistics"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-5">
+                          <div class="col-6">
+                            <div class="d-flex align-items-center mb-2">
+                              <div class="icon-holder bg-primary text-white py-1 px-3 rounded mr-2">
+                                <i class="icon ion-logo-buffer icon-sm"></i>
+                              </div>
+                              <h2 class="font-weight-semibold mb-0">3,605</h2>
+                            </div>
+                            <p>Since last week</p>
+                            <p><span class="font-weight-medium">0.51%</span> (30 days)</p>
+                          </div>
+                          <div class="col-6">
+                            <div class="mt-n3 ml-auto" id="dashboard-guage-chart"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 grid-margin">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title mb-4">World sellings</h4>
+                        <div id="dashboard-vmap" class="vector-map"></div>
+                        <div class="wrapper">
+                          <div class="d-flex w-100 pt-2 mt-4">
+                            <p class="mb-0 font-weight-semibold">California</p>
+                            <div class="wrapper ml-auto d-flex align-items-center">
+                              <p class="font-weight-semibold mb-0">26,437</p>
+                              <p class="ml-1 mb-0">26%</p>
+                            </div>
+                          </div>
+                          <div class="d-flex w-100 pt-2">
+                            <p class="mb-0 font-weight-semibold">Washington</p>
+                            <div class="wrapper ml-auto d-flex align-items-center">
+                              <p class="font-weight-semibold mb-0">3252</p>
+                              <p class="ml-1 mb-0">64%</p>
+                            </div>
+                          </div>
+                          <div class="d-flex w-100 pt-2">
+                            <p class="mb-0 font-weight-semibold">Michigan</p>
+                            <div class="wrapper ml-auto d-flex align-items-center">
+                              <p class="font-weight-semibold mb-0">4,987</p>
+                              <p class="ml-1 mb-0">30%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 grid-margin">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title mb-0">Top Performer</h4>
+                        <div class="d-flex mt-3 py-2 border-bottom">
+                          <img class="img-sm rounded-circle" src="assets/images/faces/face3.jpg" alt="profile image">
+                          <div class="wrapper ml-2">
+                            <p class="mb-n1 font-weight-semibold">Ray Douglas</p>
+                            <small>162543</small>
+                          </div>
+                          <small class="text-muted ml-auto">1 Hours ago</small>
+                        </div>
+                        <div class="d-flex py-2 border-bottom">
+                          <span class="img-sm rounded-circle bg-warning text-white text-avatar">OH</span>
+                          <div class="wrapper ml-2">
+                            <p class="mb-n1 font-weight-semibold">Ora Hill</p>
+                            <small>162543</small>
+                          </div>
+                          <small class="text-muted ml-auto">4 Hours ago</small>
+                        </div>
+                        <div class="d-flex py-2 border-bottom">
+                          <img class="img-sm rounded-circle" src="assets/images/faces/face4.jpg" alt="profile image">
+                          <div class="wrapper ml-2">
+                            <p class="mb-n1 font-weight-semibold">Brian Dean</p>
+                            <small>162543</small>
+                          </div>
+                          <small class="text-muted ml-auto">4 Hours ago</small>
+                        </div>
+                        <div class="d-flex pt-2">
+                          <span class="img-sm rounded-circle bg-success text-white text-avatar">OB</span>
+                          <div class="wrapper ml-2">
+                            <p class="mb-n1 font-weight-semibold">Olive Bridges</p>
+                            <small>162543</small>
+                          </div>
+                          <small class="text-muted ml-auto">7 Hours ago</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title mb-0">Recent Events</h4>
+                    <div class="d-flex py-2 border-bottom">
+                      <div class="wrapper">
+                        <small class="text-muted">Mar 14, 2019</small>
+                        <p class="font-weight-semibold text-gray mb-0">Change in Directors</p>
+                      </div>
+                      <small class="text-muted ml-auto">Edit event</small>
+                    </div>
+                    <div class="d-flex py-2 border-bottom">
+                      <div class="wrapper">
+                        <small class="text-muted">Mar 14, 2019</small>
+                        <p class="font-weight-semibold text-gray mb-0">Other Events</p>
+                      </div>
+                      <small class="text-muted ml-auto">Edit event</small>
+                    </div>
+                    <div class="d-flex py-2 border-bottom">
+                      <div class="wrapper">
+                        <small class="text-muted">Mar 14, 2019</small>
+                        <p class="font-weight-semibold text-gray mb-0">Quarterly Report</p>
+                      </div>
+                      <small class="text-muted ml-auto">Edit event</small>
+                    </div>
+                    <div class="d-flex pt-2">
+                      <div class="wrapper">
+                        <small class="text-muted">Mar 14, 2019</small>
+                        <p class="font-weight-semibold text-gray mb-0">Change in Directors</p>
+                      </div>
+                      <small class="text-muted ml-auto">Edit event</small>
+                    </div>
+                    <a class="d-block mt-5" href="#">Show all</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between pb-3">
+                      <h4 class="card-title mb-0">Activities</h4>
+                      <p class="mb-0 text-muted">20 finished, 5 remaining</p>
+                    </div>
+                    <ul class="timeline">
+                      <li class="timeline-item">
+                        <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
+                        <p class="event-time">Just now</p>
+                      </li>
+                      <li class="timeline-item">
+                        <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
+                        <p class="event-time">Just now</p>
+                      </li>
+                      <li class="timeline-item">
+                        <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
+                        <p class="event-time">Just now</p>
+                      </li>
+                      <li class="timeline-item">
+                        <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
+                        <p class="event-time">Just now</p>
+                      </li>
+                      <li class="timeline-item">
+                        <p class="timeline-content"><a href="#">Ben Tossell</a> assign you a task</p>
+                        <p class="event-time">Just now</p>
+                      </li>
+                    </ul>
+                    <a class="d-block mt-3" href="#">Show all</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title mb-0">People Also Watch</h4>
+                    <div class="table-responsive">
+                      <table class="table table-stretched">
+                        <thead>
+                          <tr>
+                            <th>Symbol</th>
+                            <th>Last Price</th>
+                            <th>Change</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <p class="mb-1 text-dark font-weight-medium">NFLX</p><small class="font-weight-medium">Netflix, Inc.</small>
+                            </td>
+                            <td class="font-weight-medium">$250.00</td>
+                            <td class="text-success font-weight-medium">+12.64</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="mb-1 text-dark font-weight-medium">TSLA</p><small class="font-weight-medium">Tesla, Inc.</small>
+                            </td>
+                            <td class="font-weight-medium">$458.00</td>
+                            <td class="text-danger font-weight-medium">-14.53</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="mb-1 text-dark font-weight-medium">GOOG</p><small class="font-weight-medium">Alphabet, Inc.</small>
+                            </td>
+                            <td class="font-weight-medium">$250.00</td>
+                            <td class="text-danger font-weight-medium">+12.64</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="mb-1 text-dark font-weight-medium">AMZN</p><small class="font-weight-medium">Amazon.com, Inc.</small>
+                            </td>
+                            <td class="font-weight-medium">$546.00</td>
+                            <td class="text-success font-weight-medium">+24.34</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <a class="d-block mt-3" href="#">Show all</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="container-fluid clearfix">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2020 <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"><a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank"> Free Bootstrap template </a> from BootstrapDash templates</span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/assets/vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/assets/js/shared/off-canvas.js"></script>
+    <script src="http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/assets/js/shared/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/assets/js/demo_1/dashboard.js"></script>
+    <!-- End custom js for this page-->
+    <script src="httee/jquery/src/assets/js/shared/jquery.cookie.js" type="text/javascript"></script>
+  </body>
+</html>
