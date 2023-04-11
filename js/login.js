@@ -16,6 +16,11 @@ if ( username == "MattGraves00" && password == "sakrod-rahvl0-vakniz"){
     window.location = "../user/MattGraves00/index.html";
 return false;
 }
+if ( username == "HGsysadminBE" && password == "R2D2/BB8"){
+    alert ("Login successfully");
+    window.location = "https://benny-hubot.github.io/login.html";
+return false;
+}
 else{
 attempt --;// Decrementing by one.
 alert("You have left "+attempt+" attempt;");
