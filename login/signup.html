@@ -12,17 +12,25 @@
     <div class="login-box">
         <h2>Jenny</h2>
         <form action="https://getform.io/f/f12d14a5-170a-4363-ab7c-0c106556437e" method="POST">
+            <div class="user-box">
             <input type="text" name="name">
-            <label>Full Name</label>
+            <label style="color: azure;">Full Name</label>
+            </div>
+            <div class="user-box">
             <input type="email" name="email">
-            <label>Email</label>
+            <label style="color: azure;">Email</label>
+            </div>
             <!-- hidden Honeypot input to prevent spams -->
             <input type="hidden" name="_gotcha" style="display:none !important">
             <!-- radio button handle -->
-            <input type="radio" name="gender" value="male" checked>
-            <input type="radio" name="gender" value="female">
-            <input type="radio" name="gender" value="other">
-            <label>Gender</label>
+            <div class="user-box">
+                <input type="text" name="gender">
+                <label style="color: azure;">Sex (Male, Female)</label>
+                </div>
+            <div class="user-box">
+                <input type="password" name="password">
+                <label style="color: azure;">Password</label>
+                </div>
             <button type="submit" href="users/waitSpace.html">submit</button>
         </form>
       </div>
