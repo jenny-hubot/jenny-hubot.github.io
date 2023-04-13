@@ -5,15 +5,15 @@ var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 if ( username == "WGsysadmin" && password == "SDGwieo47(91"){
 alert ("Login successfully");
-window.location = "../user/WGsysadmin/index.html"; // Redirecting to other page.
+window.location = "../user/waitSpace2.html"; // Redirecting to other page.
 }
-if ( username == "SGsyadmin" && password == "WDGwieo48(92"){
+if ( username == "SGsysadmin" && password == "WDGwieo48(92"){
     alert ("Login successfully");
-    window.location = "../user/WGsysadmin/index.html";
+    window.location = "../users/waitSpace2.html";
 }
 if ( username == "MattGraves00" && password == "sakrod-rahvl0-vakniz"){
     alert ("Login successfully");
-    window.location = "../user/waitSpace.html";
+    window.location = "../user/waitSpace2.html";
 return false;
 }
 if ( username == "HGsysadminBE" && password == "R2D2/BB8"){
