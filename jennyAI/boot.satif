@@ -1,0 +1,17 @@
+@boot
+consent ping {server00001}
+recive ping {server00004}
+load jenny.satif
+load requests.satif
+load dictionary.txt
+load virus.satif
+load devices.satif
+load detected.satif
+load security.satif
+load exi/security.satifexi
+load exi/block.satifexi
+load update.satif
+load jenny.exe
+load blacklist.txt
+load whitelist.txt
+start

@@ -1,0 +1,6 @@
+@boot
+find server00001
+load access point 12
+auth server00004
+load access point 16
+loop

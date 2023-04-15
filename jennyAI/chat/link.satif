@@ -1,0 +1,19 @@
+@boot
+%request%
+link jenny_chat - slot 1
+link jenny_chat - slot 2
+link jenny_chat - slot 3
+link jenny_chat - slot 4
+link jenny_chat - slot 5
+link jenny_chat - slot 6
+link jenny_chat - slot 7
+link jenny_chat - slot 8
+link jenny_chat - slot 9
+link jenny_chat - slot 10
+link jenny_chat - slot 11
+link jenny_chat - slot 12
+link jenny_chat - slot 13
+link jenny_chat - slot 14
+link jenny_chat - slot 15
+forward chat.html to {slot%empty%}
+loop

@@ -1,0 +1,4 @@
+@boot
+find jenny.system/jenny.satif
+load_all
+loop
