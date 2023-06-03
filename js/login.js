@@ -11,7 +11,7 @@ if ( username == "SGsysadmin" && password == "WDGwieo48(92"){
     alert ("Login successfully");
     window.location = "../users/waitSpace2.html";
 }
-if ( username == "MattGraves00" && password == "sakrod-rahvl0-vakniz"){
+if ( username == "MattGraves00" && password == "$y*g9gC7oLMO4eMzjUFW04c!"){
     alert ("Login successfully");
     window.location = "../user/waitSpace2.html";
 return false;
