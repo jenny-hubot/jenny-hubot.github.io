@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="noindex, nofollow, noarchive"/>
+	<meta name="googlebot" content="nosnippet"/>
+	<link rel="icon" type="image/x-icon" href="https://demo.froxlor.org/templates/Froxlor/assets/img/icon.png">
+	<meta name="csrf-token" content="fd3fe5fef4ea0ef3a7ecb5f3e1b69a3f27e4a9d6" />
+	<!-- CSS -->
+			<link href="https://demo.froxlor.org/templates/Froxlor/assets/css/main.css?id=f52c7bf9a1e21f7f69711a722518b366" rel="stylesheet" type="text/css" />
+
+		
+	<!-- Scripts -->
+			<script type="text/javascript" src="https://demo.froxlor.org/templates/Froxlor/assets/js/main.js?id=2ac5495294e39b0c6e23d4f068a88263"></script>
+
+			<title>Froxlor</title>
+</head>
+<body class="min-vh-100 d-flex flex-column">
+		
+	<nav class="navbar navbar-expand-md navbar-light p-0 ">
+		<div class="container-fluid gx-0">
+			<div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar"  aria-expanded="false" aria-label="Toggle sidebar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<a class="navbar-brand me-0 shadow-sm" href="admin_index.php">
+				<img src="https://demo.froxlor.org/templates/Froxlor/assets/img/logo_white.png" alt="logo" class="header-logo d-inline-block align-text-top ms-md-3">
+			</a>
+			<div class="order-0 order-md-1 d-flex flex-grow-0 flex-md-grow-1" id="navbar">
+				<ul class="navbar-nav ms-md-auto me-3 me-lg-5">
+					<a class="nav-link d-md-none" data-bs-toggle="collapse" href="#collapseSearch" role="button" aria-expanded="false" aria-controls="collapseSearch">
+						<i class="fa-solid fa-search text-muted"></i>
+					</a>
+																<li class="nav-item" id="updatecheck"></li>
+										<li class="nav-item">
+						<a class="nav-link" href="admin_index.php">
+							<i class="fa-solid fa-house me-1"></i><span class="d-none d-xl-inline">Dashboard</span>
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarOpts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="fa-solid fa-user me-1"></i><span class="d-none d-xl-inline">admin</span>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarOpts">
+							<li>
+								<a class="dropdown-item" href="admin_index.php?page=change_password"><i class="fa-solid fa-lock"></i> Password</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="admin_index.php?page=change_language"><i class="fa-solid fa-flag"></i> Language</a>
+							</li>
+																						<li>
+									<a class="dropdown-item" href="admin_index.php?page=change_theme"><i class="fa-solid fa-image"></i> Theme</a>
+								</li>
+																						<li><hr class="dropdown-divider"></li>
+								<li>
+									<a class="dropdown-item" href="admin_index.php?page=apikeys"><i class="fa-solid fa-key"></i> API keys</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="https://docs.froxlor.org/latest/api-guide/" rel="external" target="_blank"><i class="fa-solid fa-circle-info"></i> API help</a>
+								</li>
+													</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-primary" title="Logout" href="admin_index.php?action=logout">
+							<i class="fas fa-power-off"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="order-1 order-md-0 collapse navbar-collapse" id="collapseSearch">
+				<form class="ms-3 mt-3 ms-lg-5 my-md-0" id="search" method="post">
+					<div class="d-flex align-items-center">
+						<i class="fa-solid fa-search text-muted"></i>
+						<input class="search-input" title="search" type="search" placeholder="Search...">
+					</div>
+					<div class="search-results-box p-2 shadow" style="display:none;">
+						<div class="search-results list-group-flush"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+		<div class="d-flex flex-grow-1">
+		<nav id="sidebar" class="sidebar collapse d-md-flex flex-shrink-0 flex-column bg-dark overflow-auto max-h-before-header">
+	<ul class="nav d-flex flex-fill flex-column py-3">
+									<li class="nav-item" aria-current="page">
+					<a class="nav-link text-light " href="#sub0" data-bs-toggle="collapse" data-bs-target="#sub0">
+													<i class="fa-solid fa-box"></i>
+												Resources
+					</a>
+					<div class="collapse show" id="sub0" aria-expanded="true">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center" aria-current="page">
+									<div class="me-auto">
+										<a class="nav-link text-light active fw-bold" href="admin_customers.php?page=customers" >Customers</a>
+									</div>
+																			<a href="admin_customers.php?page=customers&action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_admins.php?page=admins" >Admins</a>
+									</div>
+																			<a href="admin_admins.php?page=admins&action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_domains.php?page=domains" >Domains</a>
+									</div>
+																			<a href="admin_domains.php?page=domains&action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_domains.php?page=sslcertificates" >SSL certificates</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_ipsandports.php?page=ipsandports" >IPs and Ports</a>
+									</div>
+																			<a href="admin_ipsandports.php?page=ipsandports&action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_mysqlserver.php?page=mysqlserver" >MySQL Server</a>
+									</div>
+																			<a href="admin_mysqlserver.php?page=mysqlserver&action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_plans.php?page=overview" >Hosting plans</a>
+									</div>
+																			<a href="admin_plans.php?page=overview&action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=updatecounters" >Recalculate resource usage</a>
+									</div>
+																										</li>
+													</ul>
+					</div>
+				</li>
+												<li class="nav-item" >
+					<a class="nav-link text-light collapsed" href="#sub1" data-bs-toggle="collapse" data-bs-target="#sub1">
+													<i class="fa-solid fa-area-chart"></i>
+												Traffic
+					</a>
+					<div class="collapse " id="sub1" aria-expanded="false">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_traffic.php?page=customers" >Customers</a>
+									</div>
+																										</li>
+													</ul>
+					</div>
+				</li>
+												<li class="nav-item" >
+					<a class="nav-link text-light collapsed" href="#sub2" data-bs-toggle="collapse" data-bs-target="#sub2">
+													<i class="fa-solid fa-server"></i>
+												System
+					</a>
+					<div class="collapse " id="sub2" aria-expanded="false">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_configfiles.php?page=configfiles" >Configuration</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=overview" >Settings</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_cronjobs.php?page=overview" >Cronjob settings</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_logger.php?page=log" >System log</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=rebuildconfigs" >Rebuild config files</a>
+									</div>
+																										</li>
+													</ul>
+					</div>
+				</li>
+												<li class="nav-item" >
+					<a class="nav-link text-light collapsed" href="#sub3" data-bs-toggle="collapse" data-bs-target="#sub3">
+													<i class="fab fa-php"></i>
+												PHP
+					</a>
+					<div class="collapse " id="sub3" aria-expanded="false">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_phpsettings.php?page=overview" >PHP Configurations</a>
+									</div>
+																			<a href="admin_phpsettings.php?page=overview&action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_phpsettings.php?page=fpmdaemons" >PHP-FPM versions</a>
+									</div>
+																			<a href="admin_phpsettings.php?page=fpmdaemons&action=add" class="text-secondary me-2"><i class="fa-solid fa-plus-circle"></i></a>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=phpinfo" >PHPinfo()</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_opcacheinfo.php?page=showinfo" >OPcache Info</a>
+									</div>
+																										</li>
+													</ul>
+					</div>
+				</li>
+												<li class="nav-item" >
+					<a class="nav-link text-light collapsed" href="#sub4" data-bs-toggle="collapse" data-bs-target="#sub4">
+													<i class="fa-solid fa-wrench"></i>
+												Miscellaneous
+					</a>
+					<div class="collapse " id="sub4" aria-expanded="false">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=integritycheck" >Database validation</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_templates.php?page=email" >Email & file templates</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_message.php?page=message" >Write a Message</a>
+									</div>
+																										</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="admin_settings.php?page=testmail" >SMTP test</a>
+									</div>
+																										</li>
+													</ul>
+					</div>
+				</li>
+												<li class="nav-item" >
+					<a class="nav-link text-light collapsed" href="#sub5" data-bs-toggle="collapse" data-bs-target="#sub5">
+													<i class="fa-solid fa-circle-info"></i>
+												Documentation
+					</a>
+					<div class="collapse " id="sub5" aria-expanded="false">
+						<ul class="flex-column ps-3 nav">
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="https://docs.froxlor.org/v2/admin-guide/" target="_blank">Admin guide</a>
+									</div>
+																												<span class="me-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+																	</li>
+															<li class="nav-item d-flex justify-content-between align-items-center" >
+									<div class="me-auto">
+										<a class="nav-link text-light " href="https://docs.froxlor.org/v2/api-guide/" target="_blank">API guide</a>
+									</div>
+																												<span class="me-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+																	</li>
+													</ul>
+					</div>
+				</li>
+						</ul>
+</nav>
+
+
+		<div class="d-flex flex-grow-1 overflow-hidden">
+
+			<main class="d-flex flex-column flex-grow-1 overflow-auto">
+									<section class="py-3 px-3 px-lg-5 heading shadow-sm d-flex justify-content-between align-items-center">
+						<div>
+			<h5 class="mb-1">
+							<i class="fa-solid fa-user me-1"></i>
+						Customers
+							<small>
+					<span class="badge rounded-pill bg-secondary">1</span>
+				</small>
+					</h5>
+					<span class="text-muted mt-2">Manage your customers</span>
+			
+</div>
+						<div>
+	
+			<div>
+												<a class="btn btn-outline-primary" href="admin_customers.php?page=customers&action=add">
+						<i class="fa-solid fa-plus-circle"></i>
+						<span class="d-none d-lg-inline ms-lg-1">Create customer</span>
+					</a>
+												</div>
+	</div>
+					</section>
+				
+				<section class="flex-grow-1 p-3 p-lg-5">
+					
+	
+	
+		
+			<div class="d-flex flex-column align-items-end mt-n2">
+			<div class="rounded-top bg-dark small py-1 px-2 me-3 opacity-25 text-white">
+														<span type="button" data-bs-toggle="modal" data-bs-target="#searchColumnsModal-customer_list" class="me-2"><i class="fa-solid fa-search"></i></span>
+								<span type="button" data-bs-toggle="modal" data-bs-target="#manageColumnsModal-customer_list"><i class="fa-solid fa-cog"></i></span>
+			</div>
+		</div>
+		<div class="card table-responsive">
+			<table class="table table-borderless table-striped align-middle mb-0 px-3">
+				<thead>
+					<tr>
+																<th class="p-3 ">
+			Name
+			<a href="?page=customers&action=&pageno=1&sortfield=c.name&sortorder=desc">&darr;</a>
+			<a href="?page=customers&action=&pageno=1&sortfield=c.name&sortorder=asc">&uarr;</a>
+		</th>
+	
+																<th class="p-3 ">
+			Username
+			<a href="?page=customers&action=&pageno=1&sortfield=c.loginname&sortorder=desc">&darr;</a>
+			<a href="?page=customers&action=&pageno=1&sortfield=c.loginname&sortorder=asc">&uarr;</a>
+		</th>
+	
+																<th class="p-3 ">
+			Admin
+			<a href="?page=customers&action=&pageno=1&sortfield=a.loginname&sortorder=desc">&darr;</a>
+			<a href="?page=customers&action=&pageno=1&sortfield=a.loginname&sortorder=asc">&uarr;</a>
+		</th>
+	
+																<th class="p-3 ">
+			Email
+			<a href="?page=customers&action=&pageno=1&sortfield=c.email&sortorder=desc">&darr;</a>
+			<a href="?page=customers&action=&pageno=1&sortfield=c.email&sortorder=asc">&uarr;</a>
+		</th>
+	
+																<th class="p-3 ">
+			Webspace
+			<a href="?page=customers&action=&pageno=1&sortfield=c.diskspace&sortorder=desc">&darr;</a>
+			<a href="?page=customers&action=&pageno=1&sortfield=c.diskspace&sortorder=asc">&uarr;</a>
+		</th>
+	
+																<th class="p-3 ">
+			Traffic
+			<a href="?page=customers&action=&pageno=1&sortfield=c.traffic&sortorder=desc">&darr;</a>
+			<a href="?page=customers&action=&pageno=1&sortfield=c.traffic&sortorder=asc">&uarr;</a>
+		</th>
+	
+																<th class="p-3 text-end">Options</th>
+	
+											</tr>
+				</thead>
+				<tbody>
+											<tr  class="" >
+															<td class="px-3 ">
+																			Customer1, The
+																	</td>
+															<td class="px-3 ">
+																															<a href="admin_customers.php?page=customers&amp;action=su&amp;sort=customer1&amp;id=1"   >
+							customer1
+			</a>
+																											</td>
+															<td class="px-3 ">
+																															<a href="admin_admins.php?page=admins&amp;action=su&amp;id=2"   >
+							reseller1
+			</a>
+																											</td>
+															<td class="px-3 ">
+																			team@froxlor.org
+																	</td>
+															<td class="px-3 ">
+																															<div class="progress progress-thin">
+		<div class="progress-bar bg-primary" style="width: 44%;"></div>
+	</div>
+	<div class="text-end small">
+					<i class="fa-solid fa-circle-info" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" data-bs-content="used:<br />
+web: 3.70 GiB<br />
+mail: 629.16 MiB<br />
+mysql: 0.00 B"></i>
+				4.31 GiB / 9.77 GiB
+	</div>
+
+																											</td>
+															<td class="px-3 ">
+																															<div class="progress progress-thin">
+		<div class="progress-bar bg-primary" style="width: 2%;"></div>
+	</div>
+	<div class="text-end small">
+					<i class="fa-solid fa-circle-info" data-bs-trigger="hover" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" data-bs-content="used:<br />
+http: 1.56 GiB<br />
+ftp: 2.06 GiB<br />
+mail: 3.99 GiB"></i>
+				7.61 GiB / 500.00 GiB
+	</div>
+
+																											</td>
+															<td class="px-3 text-end">
+																																											<a class="btn btn-sm btn-outline-secondary"  href="admin_customers.php?page=customers&amp;action=edit&amp;id=1"    title="Edit" ><i class="fa-solid fa-edit"></i></a>
+									<a class="btn btn-sm btn-danger"  href="admin_customers.php?page=customers&amp;action=delete&amp;id=1"    title="Delete" ><i class="fa-solid fa-trash"></i></a>
+			
+																											</td>
+													</tr>
+									</tbody>
+			</table>
+								
+					</div>
+	
+	<!-- Modal -->
+	<div class="modal fade manageColumnsModal" id="manageColumnsModal-customer_list" tabindex="-1" aria-labelledby="manageColumnsModalLabel-customer_list" aria-hidden="true">
+		<div class="modal-dialog">
+			<form method="POST" class="modal-content" data-listing="customer_list">
+				<div class="modal-header">
+					<h5 class="modal-title" id="manageColumnsModalLabel-customer_list">Manage table columns</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Here you can customize the visible columns</p>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.customerid" id="checkColumnc.customerid" name="columns[c.customerid]" >
+							<label class="form-check-label" for="checkColumnc.customerid">
+								ID
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.name" id="checkColumnc.name" name="columns[c.name]" checked>
+							<label class="form-check-label" for="checkColumnc.name">
+								Name
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.loginname" id="checkColumnc.loginname" name="columns[c.loginname]" checked>
+							<label class="form-check-label" for="checkColumnc.loginname">
+								Username
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="a.loginname" id="checkColumna.loginname" name="columns[a.loginname]" checked>
+							<label class="form-check-label" for="checkColumna.loginname">
+								Admin
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.email" id="checkColumnc.email" name="columns[c.email]" checked>
+							<label class="form-check-label" for="checkColumnc.email">
+								Email
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.street" id="checkColumnc.street" name="columns[c.street]" >
+							<label class="form-check-label" for="checkColumnc.street">
+								Street
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.zipcode" id="checkColumnc.zipcode" name="columns[c.zipcode]" >
+							<label class="form-check-label" for="checkColumnc.zipcode">
+								Zipcode
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.city" id="checkColumnc.city" name="columns[c.city]" >
+							<label class="form-check-label" for="checkColumnc.city">
+								City
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.phone" id="checkColumnc.phone" name="columns[c.phone]" >
+							<label class="form-check-label" for="checkColumnc.phone">
+								Phone
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.fax" id="checkColumnc.fax" name="columns[c.fax]" >
+							<label class="form-check-label" for="checkColumnc.fax">
+								Fax
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.customernumber" id="checkColumnc.customernumber" name="columns[c.customernumber]" >
+							<label class="form-check-label" for="checkColumnc.customernumber">
+								Customer ID
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.def_language" id="checkColumnc.def_language" name="columns[c.def_language]" >
+							<label class="form-check-label" for="checkColumnc.def_language">
+								Profile language
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.guid" id="checkColumnc.guid" name="columns[c.guid]" >
+							<label class="form-check-label" for="checkColumnc.guid">
+								GUID
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.diskspace" id="checkColumnc.diskspace" name="columns[c.diskspace]" checked>
+							<label class="form-check-label" for="checkColumnc.diskspace">
+								Webspace
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.traffic" id="checkColumnc.traffic" name="columns[c.traffic]" checked>
+							<label class="form-check-label" for="checkColumnc.traffic">
+								Traffic
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.deactivated" id="checkColumnc.deactivated" name="columns[c.deactivated]" >
+							<label class="form-check-label" for="checkColumnc.deactivated">
+								Deactivated
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.lastlogin_succ" id="checkColumnc.lastlogin_succ" name="columns[c.lastlogin_succ]" >
+							<label class="form-check-label" for="checkColumnc.lastlogin_succ">
+								Last login
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.phpenabled" id="checkColumnc.phpenabled" name="columns[c.phpenabled]" >
+							<label class="form-check-label" for="checkColumnc.phpenabled">
+								PHP enabled
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.perlenabled" id="checkColumnc.perlenabled" name="columns[c.perlenabled]" >
+							<label class="form-check-label" for="checkColumnc.perlenabled">
+								Perl enabled
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.dnsenabled" id="checkColumnc.dnsenabled" name="columns[c.dnsenabled]" >
+							<label class="form-check-label" for="checkColumnc.dnsenabled">
+								Enable DNS editor
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.theme" id="checkColumnc.theme" name="columns[c.theme]" >
+							<label class="form-check-label" for="checkColumnc.theme">
+								Theme
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.logviewenabled" id="checkColumnc.logviewenabled" name="columns[c.logviewenabled]" >
+							<label class="form-check-label" for="checkColumnc.logviewenabled">
+								Enable access to access/error-logs
+							</label>
+						</div>
+											<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="c.api_allowed" id="checkColumnc.api_allowed" name="columns[c.api_allowed]" >
+							<label class="form-check-label" for="checkColumnc.api_allowed">
+								Allow API access
+							</label>
+						</div>
+									</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-action="select-all">Select all</button>
+					<button type="button" class="btn btn-secondary" data-action="unselect-all">Unselect all</button>
+					<button type="button" class="btn btn-secondary" data-action="reset">Default</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary">Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+		<!-- Modal -->
+	<div class="modal fade searchColumnsModal" id="searchColumnsModal-customer_list" tabindex="-1" aria-labelledby="searchColumnsModalLabel-customer_list" aria-hidden="true">
+		<div class="modal-dialog">
+			<form method="GET" class="modal-content" action="admin_customers.php?page=customers">
+				<div class="modal-header">
+					<h5 class="modal-title" id="searchColumnsModalLabel-customer_list">Search in fields</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Select the field you want to search in</p>
+					<div class="mb-3">
+						<select class="form-select" name="searchfield" id="searchfield">
+																				<option value="c.customerid">ID</option>
+																											<option value="c.name">Name</option>
+																											<option value="c.loginname">Username</option>
+																											<option value="a.loginname">Admin</option>
+																											<option value="c.email">Email</option>
+																											<option value="c.street">Street</option>
+																											<option value="c.zipcode">Zipcode</option>
+																											<option value="c.city">City</option>
+																											<option value="c.phone">Phone</option>
+																											<option value="c.fax">Fax</option>
+																											<option value="c.customernumber">Customer ID</option>
+																											<option value="c.def_language">Profile language</option>
+																											<option value="c.guid">GUID</option>
+																											<option value="c.diskspace">Webspace</option>
+																											<option value="c.traffic">Traffic</option>
+																											<option value="c.deactivated">Deactivated</option>
+																											<option value="c.lastlogin_succ">Last login</option>
+																											<option value="c.phpenabled">PHP enabled</option>
+																											<option value="c.perlenabled">Perl enabled</option>
+																											<option value="c.dnsenabled">Enable DNS editor</option>
+																											<option value="c.theme">Theme</option>
+																											<option value="c.logviewenabled">Enable access to access/error-logs</option>
+																											<option value="c.api_allowed">Allow API access</option>
+																			</select>
+					</div>
+					<div class="mb-3">
+						<input class="form-control" type="text" name="searchtext" id="searchtext" placeholder="Search..." value="" />
+					</div>
+					<input type="hidden" name="page" value="customers" />
+									</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary">Search</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+
+				</section>
+
+				<footer class="text-center mb-3">
+	<span>
+		<img src="https://demo.froxlor.org/templates/Froxlor/assets/img/logo_grey.png" alt="Froxlor"/>
+									&copy; 2009-2023 by <a href="https://www.froxlor.org/" rel="external" target="_blank">the Froxlor Team</a><br>
+					<a href="https://froxlor.org/legal.php" target="_blank" class="footer-link">Legal notes</a>									</span>
+
+    </footer>
+
+			</main>
+
+					</div>
+	</div>
+</body>
+</html>
