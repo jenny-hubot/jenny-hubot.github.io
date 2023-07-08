@@ -11,27 +11,36 @@
 <body>
     <div class="login-box">
         <h2>Jenny</h2>
-        <form action="https://getform.io/f/f12d14a5-170a-4363-ab7c-0c106556437e" method="POST">
+        <form id="login-form" action="https://getform.io/f/f12d14a5-170a-4363-ab7c-0c106556437e" method="POST">
             <div class="user-box">
             <input type="text" name="name">
-            <label style="color: azure;">Full Name</label>
+            <label>Username</label>
             </div>
             <div class="user-box">
             <input type="email" name="email">
-            <label style="color: azure;">Email</label>
+            <label>Email</label>
             </div>
-            <!-- hidden Honeypot input to prevent spams -->
+            <div class="user-box">
+            <input type="password" name="password">
+            <label>Password</label>
+            </div>
+            <!-- add hidden Honeypot input to prevent spams -->
             <input type="hidden" name="_gotcha" style="display:none !important">
             <!-- radio button handle -->
             <div class="user-box">
-                <input type="text" name="gender">
-                <label style="color: azure;">Sex (Male, Female)</label>
-                </div>
-            <div class="user-box">
-                <input type="password" name="password">
-                <label style="color: azure;">Password</label>
-                </div>
-            <a type="submit" href="users/waitSpace.html">submit</a>
+            <p style="color: aquamarine;">male</p>
+            <input type="radio" name="gender" value="male" checked>
+            <p style="color: aquamarine;">female</p>
+            <input type="radio" name="gender" value="female">
+            <label>Sex</label>
+            </div>
+            <a type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+              </a>
         </form>
         <img src="https://nordvpn.com/wp-content/uploads/woman-desk-shield-nordvpn.png" alt="NordVPN" style="width:315px;height:150px;">
     </div>
