@@ -121,7 +121,30 @@ document.addEventListener('DOMContentLoaded', function() {
                     'Authorization': `Bearer ${apiKey}`
                 },
                 body: JSON.stringify({
-                    prompt: userMessage
+                    prompt: userMessage,
+                    max_tokens: 50
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const chatbotResponse = data.choices[0].text;
+                displayMessage('chatbot', chatbotResponse);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+            userInput.value = '';
+        }
+    });
+
+    function displayMessage(role, message) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbox ${role}-message`;
+        messageDiv.textContent = message;
+        chatbotMessages.appendChild(messageDiv);
+    }
+});
     </script>
 </body>
 </html>
