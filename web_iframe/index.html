@@ -100,14 +100,13 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    const chatbotMessages = document.getElementById('chatbot-messages');
+const apiKey = 'YOUR_GPT3_API_KEY';
+const engine = 'text-davinci-003';
+
+document.addEventListener('DOMContentLoaded', function() {
     const userInput = document.getElementById('user-input');
     const sendButton = document.getElementById('send-button');
-
-    // GPT-3 API configuration
-const apiKey = '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'; // Your actual GPT-3 API key
-    const engine = 'davinci'; // GPT-3 engine
+    const chatbotMessages = document.getElementById('chatbot-messages');
 
     sendButton.addEventListener('click', function() {
         const userMessage = userInput.value.trim();
@@ -115,35 +114,14 @@ const apiKey = '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'; // Your ac
         if (userMessage !== '') {
             displayMessage('user', userMessage);
 
-            // Call GPT-3 API to generate response
-            axios.post(`https://api.openai.com/v1/engines/${engine}/completions`, {
-                prompt: userMessage,
-                max_tokens: 50 // Limit response length
-            }, {
+            fetch('https://api.openai.com/v1/engines/' + engine + '/completions', {
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer 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'
-                }
-            })
-            .then(response => {
-                const aiResponse = response.data.choices[0].text;
-                displayMessage('chatbot', aiResponse);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-
-            userInput.value = '';
-        }
-    });
-
-    function displayMessage(role, message) {
-        const messageDiv = document.createElement('div');
-        messageDiv.className = `chatbox ${role}-message`;
-        messageDiv.textContent = message;
-        chatbotMessages.appendChild(messageDiv);
-    }
-});
+                    'Authorization': `Bearer ${apiKey}`
+                },
+                body: JSON.stringify({
+                    prompt: userMessage
     </script>
 </body>
 </html>
